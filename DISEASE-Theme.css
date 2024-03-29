@@ -1,0 +1,209 @@
+#lrn, #ncl, #zti, #ztc {
+    display: none !important;
+}
+body {
+    font-family: "EB Garamond", serif;
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 0px;
+    background-color: #000000;
+    background-image: url(https://64.media.tumblr.com/d80416590b18de83c1e782734db76535/fc15ccc7f7007b11-eb/s540x810/f69ba63370182fa957ef692db736aace42bba769.gif);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    margin-top: -25px;
+}
+a {
+    font-weight: bold;
+    color: #848484;
+}
+a:hover {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: underline;
+}
+h1,h2,h3 {
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: -.2px;
+}
+h2 {
+    font-family: "Share Tech Mono", monospace;
+}
+h2 a {
+    font-family: "Share Tech Mono", monospace;
+}
+h3 {
+    font-family: "Libre Baskerville", serif;
+}
+h4 {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: -.2px;
+    margin-top: 10px;
+}
+blockquote {
+    font-style: normal;
+    letter-spacing: -.2px;
+    border-left: 4px solid rgba(255,255,255,.5)
+}
+
+.dropbtn-nav {
+    font-family: "Share Tech Mono"; monospace;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #000000;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+.dropdown-nav {
+    left: 5px;
+    position: fixed;
+    top: 2px;
+    display: inline-block;
+    z-index: 2;
+}
+.dropdown-content-nav {
+    font-family: "Share Tech Mono"; monospace;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #000000;
+    letter-spacing: 2px;
+    line-height: 14px;
+    text-transform: uppercase;
+    display: none;
+    position: absolute;
+    max-height: 550px;
+    min-width: 360px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content-nav a {
+    color: #848484;
+    padding: 4px 20px;
+    display: block;
+}
+.dropdown-content-nav a:hover {
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+.dropdown-nav:hover .dropdown-content-nav {
+    display: block;
+}
+
+.dropbtn-tags {
+    font-family: "Share Tech Mono"; monospace;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #000000;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+.dropdown-tags {
+    position: fixed;
+    left: 180px;
+    top: 2px;
+    display: inline-block;
+    z-index: 2;
+}
+.dropdown-content-tags {
+    font-family: "Share Tech Mono"; monospace;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #000000;
+    letter-spacing: 2px;
+    line-height: 14px;
+    text-transform: uppercase;
+    display: none;
+    position: absolute;
+    max-height: 500px;
+    min-width: 360px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content-tags a {
+    color: #848484;
+    padding: 4px 20px;
+    display: block;
+}
+.dropdown-content-tags a:hover {
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+.dropdown-tags:hover .dropdown-content-tags {
+    display: block;
+}
+
+
+.entry {
+    background-color: #000000;
+    padding: 12px;
+    border: 2px inset rgba(255,255,255,.8);
+}
+.entry .text.chat li.odd {
+    background: #000000;
+}
+.entry .text .source {
+    border-top: 1px solid rgba(255,255,255,.2)
+}
+.entry .text h2 a.link {
+    color: #ffffff;
+    background-color: #000000;
+}
+.entry .text.chat li {
+    font: 18px "Share Tech Mono", monospace;
+    letter-spacing: -.2px;
+}
+.entry .details {
+    background-color: #000000;
+    word-spacing: 0px;
+    margin-left: 200px;
+    padding-bottom: 10px;
+}
+.entry .details a {
+    font: 14px "Share Tech Mono", monospace;
+    color: #ffffff;
+}
+#P .p-b section,#P .p-b section.o span {
+}
+#P .p-b section.o span a {
+    font: 18px Georgia, "Times New Roman", serif;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+#P .p-b section ol.notes li.more_notes_link_container,#P .p-b section ol.notes li.more_notes_link_container a {
+    font: 18px Georgia, "Times New Roman", serif;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.grid-container {
+    display: grid;
+    width: 100%;
+    padding-top: 40px;
+    grid-gap: 40px;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: auto;
+}
+
+{block:ifnotloadinganimation4}{block:ifloadinganimation3}.entry{-webkit-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-transform-origin:0% 0%;transform-origin:0% 0%}{block:ifloadinganimation3}{block:ifnotloadinganimation4}.entry.loaded{-webkit-animation:{block:ifnotloadinganimation4}{block:ifnotloadinganimation3}{block:ifnotloadinganimation2}{block:ifloadinganimation1}a1{/block:ifloadinganimation1}{/block:ifnotloadinganimation2}{/block:ifnotloadinganimation3}{/block:ifnotloadinganimation4}{block:ifnotloadinganimation4}{block:ifnotloadinganimation3}{block:ifloadinganimation2}a2{/block:ifloadinganimation2}{/block:ifnotloadinganimation3}{/block:ifnotloadinganimation4}{block:ifnotloadinganimation4}{block:ifloadinganimation3}a3{/block:ifloadinganimation3}{/block:ifnotloadinganimation4}{block:ifloadinganimation4}a4{/block:ifloadinganimation4} {block:ifnotloadinganimation4}{block:ifnotloadinganimation3}{block:ifloadinganimation2}.5{/block:ifloadinganimation2}{/block:ifnotloadinganimation3}{/block:ifnotloadinganimation4}1s ease-out both;animation:{block:ifnotloadinganimation4}{block:ifnotloadinganimation3}{block:ifnotloadinganimation2}{block:ifloadinganimation1}a1{/block:ifloadinganimation1}{/block:ifnotloadinganimation2}{/block:ifnotloadinganimation3}{/block:ifnotloadinganimation4}{block:ifnotloadinganimation4}{block:ifnotloadinganimation3}{block:ifloadinganimation2}a2{/block:ifloadinganimation2}{/block:ifnotloadinganimation3}{/block:ifnotloadinganimation4}{block:ifnotloadinganimation4}{block:ifloadinganimation3}a3{/block:ifloadinganimation3}{/block:ifnotloadinganimation4}{block:ifloadinganimation4}a4{/block:ifloadinganimation4} {block:ifnotloadinganimation4}{block:ifnotloadinganimation3}{block:ifloadinganimation2}.5{/block:ifloadinganimation2}{/block:ifnotloadinganimation3}{/block:ifnotloadinganimation4}1s ease-out both}
+
+{CustomCSS}
