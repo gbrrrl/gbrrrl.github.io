@@ -51,7 +51,7 @@ blockquote {
 
 .topnav {
   background-color: #000000;
-  font-family: "Share Tech Mono"; monospace;
+  font-family: "Share Tech Mono", monospace;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: .5px;
@@ -135,7 +135,7 @@ blockquote {
     z-index: 2;
 }
 .dropdown-content-tags {
-    font-family: "Share Tech Mono"; monospace;
+    font-family: "Share Tech Mono", monospace;
     font-weight: bold;
     font-size: 18px;
     color: #ffffff;
@@ -198,8 +198,6 @@ blockquote {
 .entry .details a {
     font: 14px "Share Tech Mono", monospace;
     color: #ffffff;
-}
-#P .p-b section,#P .p-b section.o span {
 }
 #P .p-b section.o span a {
     font: 18px Georgia, "Times New Roman", serif;
