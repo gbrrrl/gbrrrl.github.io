@@ -10,7 +10,7 @@ body {
     background-image: url(https://64.media.tumblr.com/d80416590b18de83c1e782734db76535/fc15ccc7f7007b11-eb/s540x810/f69ba63370182fa957ef692db736aace42bba769.gif);
     background-repeat: repeat;
     background-attachment: fixed;
-    margin-top: 0px;
+    margin-top: -20px;
 }
 a {
     font-weight: bold;
@@ -52,7 +52,7 @@ blockquote {
 .dropbtn-nav {
     font-family: "Share Tech Mono", monospace;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
     color: #ffffff;
     background-color: #000000;
     letter-spacing: 0px;
