@@ -86,14 +86,14 @@ blockquote {
     z-index: 1;
 }
 .dropdown-content-nav a {
-    color: #848484;
+    color: #ffffff;
     padding: 4px 20px;
     display: block;
     text-decoration: none;
 }
 .dropdown-content-nav a:hover {
     color: #000000;
-    background-color: #ffffff;
+    background-color: #3f3f3f;
     text-decoration: none;
 }
 .dropdown-nav:hover .dropdown-content-nav {
