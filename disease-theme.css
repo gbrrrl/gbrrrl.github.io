@@ -1,5 +1,6 @@
 #lrn, #ncl, #zti, #ztc  {
-    visibility:: hidden !important;
+    display: none !important;
+    z-index: -1;
 }
 body {
     font-family: "EB Garamond", serif;
