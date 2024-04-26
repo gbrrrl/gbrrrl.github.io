@@ -140,15 +140,6 @@ button::-moz-focus-inner {
     display: none
 }
 
-.mfp-counter {
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #ccc;
-    font-size: 12px;
-    line-height: 18px
-}
-
 .mfp-arrow {
     position: absolute;
     opacity: .5;
@@ -309,109 +300,6 @@ img.mfp-img {
 
 .mfp-gallery .mfp-image-holder .mfp-figure {
     cursor: pointer
-}
-
-@media screen and (max-width:800px) and (orientation: landscape),
-screen and (max-height:300px) {
-    .mfp-img-mobile .mfp-image-holder {
-        padding: 0
-    }
-
-    .mfp-img-mobile img.mfp-img {
-        padding: 0
-    }
-
-    .mfp-img-mobile .mfp-figure:after {
-        top: 0;
-        bottom: 0
-    }
-
-    .mfp-img-mobile .mfp-bottom-bar {
-        position: fixed;
-        top: auto;
-        bottom: 0;
-        margin: 0;
-        padding: 3px 5px;
-        background: rgba(0, 0, 0, 0.6)
-    }
-
-    .mfp-img-mobile .mfp-bottom-bar:empty {
-        padding: 0
-    }
-
-    .mfp-img-mobile .mfp-counter {
-        top: 3px;
-        right: 5px
-    }
-
-    .mfp-img-mobile .mfp-figure small {
-        display: inline;
-        margin-left: 5px
-    }
-}
-
-@media all and (max-width: 900px) {
-    .mfp-arrow {
-        -webkit-transform: scale(0.75);
-        transform: scale(0.75)
-    }
-
-    .mfp-arrow-left {
-        -webkit-transform-origin: 0;
-        transform-origin: 0
-    }
-
-    .mfp-arrow-right {
-        -webkit-transform-origin: 100%;
-        transform-origin: 100%
-    }
-
-    .mfp-container {
-        padding: 0 6px
-    }
-}
-
-.mfp-ie7 .mfp-img {
-    padding: 0
-}
-
-.mfp-ie7 .mfp-bottom-bar {
-    width: 600px;
-    left: 50%;
-    margin: 5px 0 0 -300px;
-    padding: 0 0 5px
-}
-
-.mfp-ie7 .mfp-container {
-    padding: 0
-}
-
-.mfp-ie7 .mfp-content {
-    padding: 44px 0 0
-}
-
-.mfp-fade .mfp-bg {
-    opacity: 0
-}
-
-.mfp-fade.mfp-bg.mfp-ready {
-    opacity: .9
-}
-
-.mfp-fade.mfp-bg.mfp-removing {
-    opacity: 0
-}
-
-.mfp-fade.mfp-wrap .mfp-content {
-    opacity: 0
-}
-
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-    opacity: 1
-}
-
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-    opacity: 0
 }
 
 *,
