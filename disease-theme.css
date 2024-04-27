@@ -7,7 +7,7 @@ body {
     background-image: url(https://64.media.tumblr.com/d80416590b18de83c1e782734db76535/fc15ccc7f7007b11-eb/s540x810/f69ba63370182fa957ef692db736aace42bba769.gif);
     background-repeat: repeat;
     background-attachment: fixed;
-    margin-top: -10px;
+    margin-top: 0px;
 }
 a {
     font-weight: bold;
@@ -46,63 +46,12 @@ blockquote {
     border-left: 4px solid rgba(255,255,255,.5)
 }
 
-.dropbtn-nav {
-    font-family: "Share Tech Mono", monospace;
-    font-weight: bold;
-    font-size: 24px;
-    color: #ffffff;
-    background-color: #000000;
-    letter-spacing: 0px;
-    text-transform: uppercase;
-    padding: 6px 8px;
-    border: 1px solid #ffffff;
-    cursor: pointer;
-}
-.dropdown-nav {
-    position: fixed;
-    left: 2px;
-    top: 2px;
-    display: inline-block;
-    z-index: 2;
-}
-.dropdown-content-nav {
-    font-family: "Share Tech Mono", monospace;
-    font-weight: bold;
-    font-size: 18px;
-    color: #ffffff;
-    background-color: #000000;
-    letter-spacing: 2px;
-    line-height: 14px;
-    text-transform: uppercase;
-    display: none;
-    position: absolute;
-    max-height: 500px;
-    min-width: 360px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropdown-content-nav a {
-    color: #ffffff;
-    padding: 4px 20px;
-    display: block;
-    text-decoration: none;
-}
-.dropdown-content-nav a:hover {
-    color: #000000;
-    background-color: #3f3f3f;
-    text-decoration: none;
-}
-.dropdown-nav:hover .dropdown-content-nav {
-    display: block;
-}
-
 .row {
     list-style-type: none;
 }
 .entry {
     background-color: #000000;
-    padding: 8px;
+    padding: 12px;
     border: 2px inset rgba(255,255,255,.8);
 }
 .entry .text.chat li.odd {
@@ -129,8 +78,6 @@ blockquote {
     font: 14px "Share Tech Mono", monospace;
     color: #ffffff;
 }
-#P .p-b section,#P .p-b section.o span {
-}
 #P .p-b section.o span a {
     font: 18px Georgia, "Times New Roman", serif;
     color: #ffffff;
@@ -149,4 +96,3 @@ blockquote {
     grid-template-columns: auto auto auto;
     grid-auto-rows: auto;
 }
-
