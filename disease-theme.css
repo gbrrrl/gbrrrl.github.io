@@ -7,7 +7,7 @@ body {
     background-image: url(https://64.media.tumblr.com/d80416590b18de83c1e782734db76535/fc15ccc7f7007b11-eb/s540x810/f69ba63370182fa957ef692db736aace42bba769.gif);
     background-repeat: repeat;
     background-attachment: fixed;
-    margin-top: 0px;
+    margin-top: -10px;
 }
 a {
     font-weight: bold;
@@ -102,7 +102,7 @@ blockquote {
 }
 .entry {
     background-color: #000000;
-    padding: 12px;
+    padding: 8px;
     border: 2px inset rgba(255,255,255,.8);
 }
 .entry .text.chat li.odd {
