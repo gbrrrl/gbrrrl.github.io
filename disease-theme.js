@@ -3,6 +3,9 @@ var body = $("body"),
   article = $(".entry");
 article.fitVids(),
   article.each(article_setup),
+  $("#posts-container").click(function () {
+    body.removeClass("slide");
+  }),
   body.is("#I")
     ? (grid
         .css("min-height", $(window).height() + 80 + "px")
