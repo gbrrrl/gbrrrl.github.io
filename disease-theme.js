@@ -1,3 +1,39 @@
+function photoset() {
+    $(".photoset-grid").photosetGrid({
+      highresLinks: !0,
+      rel: $(".photoset-grid").attr("data-id"),
+      gutter: "5px",
+      onComplete: function () {},
+    }),
+      $(".lightbox").each(function () {
+        $(this).magnificPopup({
+          delegate: "a",
+          type: "image",
+          gallery: { enabled: !0 },
+          removalDelay: 200,
+          mainClass: "mfp-fade",
+        });
+      });
+  }
+  function article_setup() {
+    if ($(this).hasClass("tag-large") || $(this).hasClass("tag-l")) {
+      if (
+        ($(this).css({ width: 2 * post_width_get + post_margin_get + "px" }),
+        $(this).hasClass("photo-post"))
+      ) {
+        var t = $(this).find("img");
+        (retina_image_url = t.attr("src").replace("_500", "_1280")),
+          t.attr("src", retina_image_url);
+      }
+    } else
+      $(this).css({
+        width: post_width_get + "px",
+        "margin-left": post_margin_get / 2 + "px",
+        "margin-right": post_margin_get / 2 + "px",
+        "margin-bottom": post_margin_get + "px",
+      });
+  }
+
 var body = $("body"),
   grid = $("#posts"),
   article = $(".entry");
