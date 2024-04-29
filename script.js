@@ -2292,7 +2292,6 @@
           fixedBgPos: "auto",
           overflowY: "auto",
           closeMarkup:
-            '<button title="%title%" type="button" class="mfp-close">&times;</button>',
           tClose: "Close (Esc)",
           tLoading: "Loading...",
         },
@@ -2731,7 +2730,6 @@
       options: {
         enabled: !1,
         arrowMarkup:
-          '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
         preload: [0, 2],
         navigateByImgClick: !0,
         arrows: !0,
