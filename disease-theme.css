@@ -1,3 +1,7 @@
+html {
+    position: relative;
+    width: 100%;
+}
 body {
     font-family: "EB Garamond", serif;
     font-size: 18px;
@@ -7,16 +11,36 @@ body {
     background-image: url(https://64.media.tumblr.com/d80416590b18de83c1e782734db76535/fc15ccc7f7007b11-eb/s540x810/f69ba63370182fa957ef692db736aace42bba769.gif);
     background-repeat: repeat;
     background-attachment: fixed;
-    margin-top: 0px;
+    margin: 0;
+    padding: 0;
 }
 a {
     font-weight: bold;
     color: #848484;
+    word-wrap: break-word;
+    text-decoration: none;
 }
 a:hover {
     font-weight: bold;
     color: #ffffff;
     text-decoration: underline;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+iframe, figure {
+    max-width: 100%;
+    margin: auto;
+}
+figure img {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    height: auto !important;
+}
+h1, h2, h3, h4, h5 {
+    margin: 0 0 20px;
 }
 h1,h2,h3 {
     font-size: 18px;
@@ -43,9 +67,42 @@ h4 {
 blockquote {
     font-style: normal;
     letter-spacing: -.2px;
-    border-left: 4px solid rgba(255,255,255,.5)
+    border-left: 4px solid rgba(255,255,255,.5);
+    padding: 0 0 0 15px;
+    margin: 0;
 }
-
+#tumblr_controls {
+    position: fixed;
+    top: 0;
+}
+ul, ol {
+    padding: 0;
+}
+li {
+    list-style-position: inside;
+}
+.like_button {
+    position: absolute;
+    opacity: 0;
+}
+.like_button.liked {
+    opacity: 1 !important;
+}
+#posts-container {
+    position: relative;
+    right: 0;
+}
+#posts {
+    position: relative;
+    margin: auto;
+    padding: 40px 0;
+}
+#posts:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
 .row {
     list-style-type: none;
 }
@@ -53,6 +110,61 @@ blockquote {
     background-color: #000000;
     padding: 12px;
     border: 2px inset rgba(255,255,255,.8);
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+    margin: 0 20px 40px;
+}
+.entry p:last-child {
+    margin: 0 !important;
+}
+.entry .media {
+    width: 100%;
+}
+.entry .media iframe {
+    display: block;
+    width: 100%;
+}
+.entry .photo {
+    position: relative;
+    overflow: hidden;
+}
+.entry .photo img {
+    width: 100%;
+}
+.entry .lightbox a {
+    outline: none;
+}
+.entry .text {
+    position: relative;
+}
+.entry .captions {
+    padding: 20px 0;
+}
+.entry .text.chat li {
+    padding: 10px;
+    list-style: none;
+}
+.entry .text h2 a.link {
+    display: block;
+    text-decoration: none;
+}
+.entry .text h2 a.link:after {
+    content: "\2192";
+    margin: 0 0 0 20px;
+}
+.entry .text .quote-symbol {
+    position: absolute;
+    top: -40px;
+    left: -5px;
+    font: 200px arial;
+    opacity: .1;
+}
+.entry .text .source {
+    padding: 20px 0 0;
+}
+.entry p, .entry blockquote {
+    margin: 0 0 20px
 }
 .entry .text.chat li.odd {
     background: #000000;
@@ -78,12 +190,82 @@ blockquote {
     font: 14px "Share Tech Mono", monospace;
     color: #ffffff;
 }
+#P #posts {
+    width: 1040px;
+}
+#P .entry {
+    float: left;
+    width: 600px !important;
+}
+#P .p-b {
+    float: right;
+    width: 400px;
+}
+#P .entry, #P .p-b {
+    margin: 0 !important;
+}
+
+#P .entry .text, #P .entry .media, #P .entry .photo.photoset {
+    bottom: 0 !important;
+}
+#P .p-b section ol.notes {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#P .p-b section ol.notes:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+#P .p-b section ol.notes li.note {
+    float: left;
+    overflow: hidden;
+    height: 18px;
+    width: 18px;
+    margin: 4px 8px 4px 0;
+    opacity: .5;
+}
+#P .p-b section ol.notes li.note:hover {
+    opacity: 1;
+}
+#P .p-b section ol.notes li.note img.avatar {
+    height: 100%;
+    width: 100%;
+    vertical-align: -4px;
+}
+#P .p-b section ol.notes li.more_notes_link_container {
+    width: 100%;
+    height: 14px;
+    margin: 20px 0 0;
+    text-align: left !important;
+    text-transform: uppercase;
+}
+#P .p-b section ol.notes li.more_notes_link_container a {
+    text-decoration: none;
+}
+#P .p-b section {
+    margin: 0;
+    padding: 20px 0;
+}
+#P .p-b section.o {
+    padding: 0 !important;
+    border: 0 !important;
+}
+#P .p-b section.o span {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    padding: 20px 0;
+}
 #P .p-b section.o span a {
     font: 18px Georgia, "Times New Roman", serif;
     color: #ffffff;
     letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
-#P .p-b section ol.notes li.more_notes_link_container,#P .p-b section ol.notes li.more_notes_link_container a {
+#P .p-b section ol.notes li.more_notes_link_container, #P .p-b section ol.notes li.more_notes_link_container a {
     font: 18px Georgia, "Times New Roman", serif;
     color: #ffffff;
     letter-spacing: 1px;
