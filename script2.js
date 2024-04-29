@@ -26,13 +26,7 @@ eval(
         }
       }
       return p;
-    })(
-      
-      62,
-      121,
-      "||box|border|webkit||rgba||opacity||||Helvetica|26|sizing|color||font|background|right|both|animation|2px|3s|text|align|important|none|http|span|HelveticaNeue|Neue|5px|Arial|sans||serif|com|index|transition|45s|1px|fixed|height|padding|position|moz|keyframes|100|20px|7px|smoothing|decoration|fff|solid|300781|highlight|antialiased|tap|radius|999999|||href|id|display|style||external|rel||nofollow|_blank|target|||after||hover|15px|before|12px|700|png|wfyo567nk|32|bt||||repeat|no|3zmswwt|tumblr|top||write|document|26px|width|static|url|18px|110px|169|127px|vertical||margin|900||23px||center|3px|bottom|block|25px||inline|38".split(
-        "|"
-      ),
+    }),
       0,
       {}
     )
