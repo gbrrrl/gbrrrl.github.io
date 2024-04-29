@@ -1,4 +1,4 @@
-!(function (e) {
+(function (e) {
   (e.fn.infinitescroll = function (n, o) {
     function t() {
       m.debug && window.console && console.log.call(console, arguments);
