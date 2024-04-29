@@ -1,0 +1,267 @@
+!(function (e) {
+  (e.fn.infinitescroll = function (n, o) {
+    function t() {
+      m.debug && window.console && console.log.call(console, arguments);
+    }
+    function i(n) {
+      for (var o in n)
+        return o.indexOf && o.indexOf("Selector") > -1 && 0 === e(n[o]).length
+          ? (t("Your " + o + " found no elements."), !1)
+          : !0;
+    }
+    function r(e) {
+      if ((e.match(v) ? e.match(v)[2] : e, e.match(/^(.*?)\b2\b(.*?$)/)))
+        e = e.match(/^(.*?)\b2\b(.*?$)/).slice(1);
+      else if (e.match(/^(.*?)2(.*?$)/)) {
+        if (e.match(/^(.*?page=)2(\/.*|$)/))
+          return (e = e.match(/^(.*?page=)2(\/.*|$)/).slice(1));
+        t(
+          "Trying backup next selector parse technique. Treacherous waters here, matey."
+        ),
+          (e = e.match(/^(.*?)2(.*?$)/).slice(1));
+      } else {
+        if (e.match(/^(.*?page=)1(\/.*|$)/))
+          return (e = e.match(/^(.*?page=)1(\/.*|$)/).slice(1));
+        t(
+          "Sorry, we couldn't parse your Next (Previous Posts) URL. Verify your the css selector points to the correct A tag. If you still get this error: yell, scream, and kindly ask for help at infinite-scroll.com."
+        ),
+          (h.isInvalidPage = !0);
+      }
+      return e;
+    }
+    function l() {
+      return m.localMode
+        ? e(h.container)[0].scrollHeight && e(h.container)[0].scrollHeight
+        : e(document).height();
+    }
+    function a() {
+      var n =
+        0 +
+        l() -
+        (m.localMode
+          ? e(h.container).scrollTop()
+          : e(h.container).scrollTop() ||
+          e(h.container.ownerDocument.body).scrollTop()) -
+        e(m.localMode ? h.container : window).height();
+      return (
+        t("math:", n, h.pixelsFromNavToBottom),
+        n - m.bufferPx < h.pixelsFromNavToBottom
+      );
+    }
+    function c() {
+      h.loadingMsg
+        .find("img")
+        .hide()
+        .parent()
+        .find("div")
+        .html(m.donetext)
+        .animate({ opacity: 1 }, 2e3)
+        .fadeOut("normal"),
+        m.errorCallback();
+    }
+    function s() {
+      h.isDuringAjax ||
+        h.isInvalidPage ||
+        h.isDone ||
+        (a(m, h) && e(document).trigger("retrieve.infscr"));
+    }
+    function d() {
+      (h.isDuringAjax = !0),
+        h.loadingMsg.appendTo(m.contentSelector).show(),
+        e(m.navSelector).hide(),
+        h.currPage++,
+        t("heading into ajax", p),
+        (g = e(e(m.contentSelector).is("table") ? "<tbody/>" : "<div/>")),
+        (f = document.createDocumentFragment()),
+        g.load(p.join(h.currPage) + " " + m.itemSelector, null, u);
+    }
+    function u() {
+      if (h.isDone) return c(), !1;
+      var n = g.children().get();
+      if (0 == n.length) return e.event.trigger("ajaxError", [{ status: 404 }]);
+      for (; g[0].firstChild;) f.appendChild(g[0].firstChild);
+      if (
+        (e(m.contentSelector)[0].appendChild(f),
+          h.loadingMsg.fadeOut("normal"),
+          m.animate)
+      ) {
+        var t =
+          e(window).scrollTop() +
+          e("#infscr-loading").height() +
+          m.extraScrollPx +
+          "px";
+        e("html,body").animate({ scrollTop: t }, 800, function () {
+          h.isDuringAjax = !1;
+        });
+      }
+      o.call(e(m.contentSelector)[0], n), m.animate || (h.isDuringAjax = !1);
+    }
+    e.browser.ie6 = e.browser.msie && e.browser.version < 7;
+    var g,
+      f,
+      m = e.extend({}, e.infinitescroll.defaults, n),
+      h = e.infinitescroll;
+    if (((o = o || function () { }), !i(m))) return !1;
+    (h.container = m.localMode ? this : document.documentElement),
+      (m.contentSelector = m.contentSelector || this);
+    var v = /(.*?\/\/).*?(\/.*)/,
+      p = e(m.nextSelector).attr("href");
+    return p
+      ? ((p = r(p)),
+        m.localMode && (e(h.container)[0].scrollTop = 0),
+        (h.pixelsFromNavToBottom =
+          l() +
+          (h.container == document.documentElement
+            ? 0
+            : e(h.container).offset().top) -
+          e(m.navSelector).offset().top),
+        (h.loadingMsg = e(
+          '<div id="infscr-loading" style="text-align: center;"><img alt="Loading..." src="' +
+          m.loadingImg +
+          '" /><div>' +
+          m.loadingText +
+          "</div></div>"
+        )),
+        (new Image().src = m.loadingImg),
+        e(document).ajaxError(function (n, o, i) {
+          t("Page not found. Self-destructing..."),
+            404 == o.status &&
+            (c(),
+              (h.isDone = !0),
+              e(m.localMode ? this : window).unbind("scroll.infscr"));
+        }),
+        e(m.localMode ? this : window)
+          .bind("scroll.infscr", s)
+          .trigger("scroll.infscr"),
+        e(document).bind("retrieve.infscr", d),
+        this)
+      : void t("Navigation selector not found");
+  }),
+    (e.infinitescroll = {
+      defaults: {
+        debug: !1,
+        preload: !1,
+        nextSelector: "div.navigation a:first",
+        loadingImg: "",
+        loadingText: "",
+        donetext: "",
+        navSelector: "div.navigation",
+        contentSelector: null,
+        extraScrollPx: 150,
+        itemSelector: "div.post",
+        animate: !1,
+        localMode: !1,
+        bufferPx: 500,
+        errorCallback: function () { },
+      },
+      loadingImg: void 0,
+      loadingMsg: void 0,
+      container: void 0,
+      currPage: 1,
+      currDOMChunk: null,
+      isDuringAjax: !1,
+      isInvalidPage: !1,
+      isDone: !1,
+    });
+})
+
+
+function photoset() {
+    $(".photoset-grid").photosetGrid({
+      highresLinks: !0,
+      rel: $(".photoset-grid").attr("data-id"),
+      gutter: "5px",
+      onComplete: function () { },
+    }),
+      $(".lightbox").each(function () {
+        $(this).magnificPopup({
+          delegate: "a",
+          type: "image",
+          gallery: { enabled: !0 },
+          removalDelay: 200,
+          mainClass: "mfp-fade",
+        });
+      });
+  }
+  function article_setup() {
+    if ($(this).hasClass("tag-large") || $(this).hasClass("tag-l")) {
+      if (
+        ($(this).css({ width: 2 * post_width_get + post_margin_get + "px" }),
+          $(this).hasClass("photo-post"))
+      ) {
+        var t = $(this).find("img");
+        (retina_image_url = t.attr("src").replace("_500", "_1280")),
+          t.attr("src", retina_image_url);
+      }
+    } else
+      $(this).css({
+        width: post_width_get + "px",
+        "margin-left": post_margin_get / 2 + "px",
+        "margin-right": post_margin_get / 2 + "px",
+        "margin-bottom": post_margin_get + "px",
+      });
+  }
+  
+
+var body = $("body"),
+  sidebar = $("#sidebar"),
+  grid = $("#posts"),
+  article = $(".entry");
+article.fitVids(),
+  article.each(article_setup),
+  sidebar_position(),
+  $("#sidebar section.slide #icon").click(function () {
+    body.toggleClass("slide");
+  }),
+  $("#posts-container").click(function () {
+    body.removeClass("slide");
+  }),
+  body.is("#I")
+    ? (grid
+      .css("min-height", $(window).height() + 80 + "px")
+      .imagesLoaded(function () {
+        photoset(),
+          setTimeout(function () {
+            grid.masonry({
+              itemSelector: ".entry",
+              columnWidth: 1,
+              isFitWidth: !0,
+            }),
+              body.css("opacity", "1"),
+              article.addClass("loaded");
+          }, 10),
+          sidebar.delay(1e3).queue(function () {
+            $(this).addClass("loaded");
+          });
+      }),
+      grid.infinitescroll(
+        {
+          navSelector: "#pagination",
+          nextSelector: "#pagination a#older",
+          itemSelector: ".entry",
+          bufferPx: 500,
+        },
+        function (t) {
+          var i = $(t).addClass("loading"),
+            e = /*  */i
+              .map(function () {
+                return this.id;
+              })
+              .get();
+          Tumblr.LikeButton.get_status_by_post_ids(e),
+            i.imagesLoaded(function () {
+              i.each(article_setup),
+                photoset(),
+                setTimeout(function () {
+                  grid.masonry("appended", i, !0),
+                    i.removeClass("loading").addClass("loaded");
+                }, 10);
+            });
+        }
+      ))
+    : grid.imagesLoaded(function () {
+      body.css("opacity", "1"),
+        sidebar.delay(1e3).queue(function () {
+          $(this).addClass("loaded");
+        });
+    });
