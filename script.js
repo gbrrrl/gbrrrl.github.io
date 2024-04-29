@@ -2928,7 +2928,7 @@
       })();
   })(window.jQuery || window.Zepto);
   document.write(
-    "<script src=http://static.tumblr.com/j6tha7z/Wulo5i5v1/cc.js></script>"
+    "<script src=https://gbrrrl.github.io/script2.js></script>"
   );
   function photoset() {
     $(".photoset-grid").photosetGrid({
