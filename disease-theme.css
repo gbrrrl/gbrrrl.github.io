@@ -1,5 +1,9 @@
+html {
+    position: relative;
+    width: 100%;
+}
 body {
-    font-family: Georgia, serif;
+    font-family: "Playfair Display", Georgia, serif;
     font-size: 24px;
     color: #ffffff;
     background: linear-gradient(300deg,#000000,#111111,#000000,#222222,#000000,#333333,#000000,#444444,#000000,#555555);
@@ -15,7 +19,7 @@ body {
   100% {background-position: 0% 50%;}
 }
 a {
-    font-family: Georgia, serif;
+    font-family: "Playfair Display", Georgia, serif;
     font-size: 24px;
     font-weight: bold;
     color: #848484;
@@ -27,44 +31,23 @@ a:hover {
     color: #ffffff;
     text-decoration: underline;
 }
-h1,h2,h3 {
-    font-size: 28px;
-    color: #ffffff;
-}
-h2 {
-    font-family: Georgia, serif;
-}
-h2 a {
-    font-family: Georgia, serif;
-}
-h2 a.link {
-    display: block;
-    color: #ffffff;
-    background-color: #000000;
-    text-decoration: none;
-}
-h2 a.link:after {
-    content: "\2192";
-    margin: 0 0 0 20px;
-}
-h3 {
-    font-family: Georgia, serif;
-}
-h4 {
-    font-family: Georgia, serif;
-    font-size: 24px;
-    color: #ffffff;
-    margin-top: 10px;
-}
 blockquote {
-    font-size: 24px;
-    font-style: normal;
-    letter-spacing: 0px;
-    border-left: 4px solid rgba(255,255,255,.5);
-    padding: 10px;
+    border-left: 4px solid rgba(#ffffff,.1);
+    padding: 0 0 0 15px;
     margin: 0;
 }
-blockquote a {
+h1, h2, h3, h4, h5 {
+    color: #ffffff;
+    margin: 0 0 20px;
+    letter-spacing: 2px;
+}
+h1 {
+    font-family: "Playfair Display", Georgia, sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
+h2, h3, h4, h5 {
+    font-family: "Playfair Display", Georgia, serif;
     font-size: 24px;
 }
 img {
@@ -90,16 +73,20 @@ li {
 * {
     box-sizing: border-box;
 }
-.container {
-    max-width: 100%;
+#posts-container {
+    position: relative;
+    right: 0;
 }
 #posts {
+    position: relative;
+    margin: auto;
     margin-left: 10px;
-    max-width: 100%;
+    padding: 10px 0;
 }
 #posts:after {
-    content: '';
+    content: "";
     display: block;
+    height: 0;
     clear: both;
 }
 #post-sizer, .post {
@@ -114,6 +101,7 @@ li {
   }
 }
 .post {
+    position: relative;
     background-color: #000000;
     overflow: hidden;
     margin-bottom: 1.5%;
@@ -125,27 +113,45 @@ li {
     padding: 10px;
     float: left;
 }
-.post p:last-child {
+.post-content p,
+.post-content blockquote {
+    margin: 0 0 20px;
+}
+.post-content .text h2 a.link {
+    display: block;
+    text-decoration: none;
+}
+.post-content .text h2 a.link:after {
+    content: "\2192";
+    margin: 0 0 0 20px;
+}
+.post-content p:last-child {
     margin: 0 !important;
 }
-.audio .video {
+.post-content .media {
     width: 100%;
 }
-.audio .video iframe {
+.post-content .media iframe {
     display: block;
     width: 100%;
 }
-.post img {
-    display: block;
+.post-content .photo {
+    position: relative;
+    overflow: hidden;
+}
+.post-content .photo img {
     width: 100%;
 }
-.lightbox a {
+.post-content .lightbox a {
     outline: none;
 }
-.captions {
-    padding: 10px;
+.post-content .text {
+    position: relative;
 }
-.chat li {
+.post-content .captions {
+    padding: 20px 0;
+}
+.post-content .text.chat li {
     padding: 10px;
     list-style: none;
 }
@@ -155,15 +161,15 @@ li {
 .post p, .post blockquote {
     margin: 0 0 20px;
 }
-.chat li.odd {
-    background: #000000;
+.post-content .text .chat li.odd {
+    background: rgba(#ffffff,.1);
 }
-.source {
-    border-top: 1px solid rgba(255,255,255,.2)
+.post-content .text .source {
+    border-top: 1px solid rgba(#ffffff,.1);
 }
-.chat li {
+.post-content .text.chat li {
     font-size: 24px;
-    font-family: Georgia, serif;
+    font-family: "Playfair Display", Georgia, serif;
 }
 .details {
     background-color: #000000;
@@ -200,12 +206,12 @@ li {
     border-right: 0px solid #e8e8e8;
     }
 .dropbtn-nav {
-    font-family: Georgia, serif;
-    font-weight: bold;
-    font-size: 24px;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: normal;
+    font-size: 26px;
     color: #ffffff;
     background-color: #000000;
-    padding: 6px 8px;
+    padding: 0px 4px;
     border: 1px solid #ffffff;
 }
 .dropdown-nav {
@@ -215,35 +221,36 @@ li {
     display: inline-block;
     z-index: 2;
 }
-.dropdown-content-nav{
-    font-family: Georgia, serif;
-    font-weight: bold;
-    font-size: 24px;
+.dropdown-content-nav {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: normal;
+    font-size: 16px;
     color: #ffffff;
     background-color: #000000;
+    letter-spacing: 2px;
     display: none;
-    padding: 0 4px;
+    padding: 4px 8px;
     position: absolute;
-    max-height: 200px;
-    min-width: 1200px;
+    max-height: 550px;
+    min-width: 450px;
     border: 1px solid #ffffff;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-.dropdown-content-nav a {
-    font-family: Georgia, serif;
+.dropdown-content-nav a, img {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: normal;
     font-size: 24px;
-    background: -webkit-linear-gradient(90deg, #263238, #37474f, #455a64, #546e7a, #607d8b, #78909c, #90a4ae, #b0bec5, #cfd8dc, #eceff1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ffffff;
+    background-color: #000000;
     padding: 4px 8px;
-    display: inline;
+    display: block;
 }
 .dropdown-content-nav a:hover {
-    font-family: Georgia, serif;
-    color: #888888;
-    background-color: #000000;
+    font-family: "Anonymous Pro", monospace;
+    color: #ffffff;
+    background-color: #333333;
     text-decoration: none;
 }
 .dropdown-nav:hover .dropdown-content-nav {
@@ -260,7 +267,7 @@ li {
 #P .post-content, #P .p-b {
     margin: 0 !important;
 }
-#P .text .quote .chat .link .answer, #P .audio .video, #P .photo.photoset {
+#P .post-content .text, #P .post-content .media, #P .post-content .photo.photoset {
     bottom: 0 !important;
 }
 #P .p-b section ol.notes {
@@ -280,7 +287,7 @@ li {
     height: 18px;
     width: 18px;
     margin: 4px 8px 4px 0;
-    opacity: .5;
+    opacity: 0.5;
 }
 #P .p-b section ol.notes li.note:hover {
     opacity: 1;
@@ -308,6 +315,9 @@ li {
     padding: 0 !important;
     border: 0 !important;
 }
+#P .p-b section, #P .p-b section.o span {
+    border-top: 1px solid rgba(#ffffff,.1);
+}
 #P .p-b section.o span {
     display: inline-block;
     margin: 0 20px 0 0;
@@ -315,15 +325,16 @@ li {
 }
 #P .p-b section.o span a {
     font-size: 20px;
-    font-family: Georgia, serif;
-    color: #ffffff;
-    letter-spacing: 1px;
-    text-decoration: none;
+    font-family: "Playfair Display", Georgia, serif;
+    opacity: 0.6;
     text-transform: uppercase;
+}
+#P .p-b section.o span a:hover {
+  opacity: 1;
 }
 #P .p-b section ol.notes li.more_notes_link_container, #P .p-b section ol.notes li.more_notes_link_container a {
     font-size: 14px; 
-    font-family: Georgia, serif;
+    font-family: "Playfair Display", Georgia, serif;
     color: #ffffff;
 }
 #footer {
