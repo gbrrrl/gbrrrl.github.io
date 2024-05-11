@@ -1,20 +1,22 @@
-html {
-    position: relative;
-    width: 100%;
-}
 body {
-    font-family: "EB Garamond", serif;
-    font-size: 18px;
+    font-family: Georgia, serif;
+    font-size: 24px;
     color: #ffffff;
-    letter-spacing: 0px;
+    background: linear-gradient(300deg,#000000,#111111,#000000,#222222,#000000,#333333,#000000,#444444,#000000,#555555);
+    background-size: 600% 600%;
+    animation: gradient-animation 20s ease infinite;
     background-color: #000000;
-    background-image: url(https://64.media.tumblr.com/d80416590b18de83c1e782734db76535/fc15ccc7f7007b11-eb/s540x810/f69ba63370182fa957ef692db736aace42bba769.gif);
-    background-repeat: repeat;
-    background-attachment: fixed;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
+@keyframes gradient-animation {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
 a {
+    font-family: Georgia, serif;
+    font-size: 24px;
     font-weight: bold;
     color: #848484;
     word-wrap: break-word;
@@ -24,6 +26,46 @@ a:hover {
     font-weight: bold;
     color: #ffffff;
     text-decoration: underline;
+}
+h1,h2,h3 {
+    font-size: 28px;
+    color: #ffffff;
+}
+h2 {
+    font-family: Georgia, serif;
+}
+h2 a {
+    font-family: Georgia, serif;
+}
+h2 a.link {
+    display: block;
+    color: #ffffff;
+    background-color: #000000;
+    text-decoration: none;
+}
+h2 a.link:after {
+    content: "\2192";
+    margin: 0 0 0 20px;
+}
+h3 {
+    font-family: Georgia, serif;
+}
+h4 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+blockquote {
+    font-size: 24px;
+    font-style: normal;
+    letter-spacing: 0px;
+    border-left: 4px solid rgba(255,255,255,.5);
+    padding: 10px;
+    margin: 0;
+}
+blockquote a {
+    font-size: 24px;
 }
 img {
     display: block;
@@ -39,173 +81,186 @@ figure img {
     max-width: 100%;
     height: auto !important;
 }
-h1, h2, h3, h4, h5 {
-    margin: 0 0 20px;
-}
-h1,h2,h3 {
-    font-size: 18px;
-    color: #ffffff;
-    letter-spacing: -.2px;
-}
-h2 {
-    font-family: "Share Tech Mono", monospace;
-}
-h2 a {
-    font-family: "Share Tech Mono", monospace;
-}
-h3 {
-    font-family: "Libre Baskerville", serif;
-}
-h4 {
-    font-family: "PT Sans Caption", sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-    color: #ffffff;
-    letter-spacing: -.2px;
-    margin-top: 10px;
-}
-blockquote {
-    font-style: normal;
-    letter-spacing: -.2px;
-    border-left: 4px solid rgba(255,255,255,.5);
-    padding: 0 0 0 15px;
-    margin: 0;
-}
-#tumblr_controls {
-    position: fixed;
-    top: 0;
-}
 ul, ol {
     padding: 0;
 }
 li {
     list-style-position: inside;
 }
-.like_button {
-    position: absolute;
-    opacity: 0;
+* {
+    box-sizing: border-box;
 }
-.like_button.liked {
-    opacity: 1 !important;
-}
-#posts-container {
-    position: relative;
-    right: 0;
+.container {
+    max-width: 100%;
 }
 #posts {
-    position: relative;
-    margin: auto;
-    padding: 40px 0;
+    margin-left: 10px;
+    max-width: 100%;
 }
 #posts:after {
-    content: "";
+    content: '';
     display: block;
-    height: 0;
     clear: both;
 }
-.row {
-    list-style-type: none;
+#post-sizer, .post {
+    width: 48.5%;
 }
-.entry {
+#gutter-sizer {
+    width: 1.5%;
+}
+@media screen and (max-width: 600px) {
+  .post {
+    width: 100%;
+  }
+}
+.post {
     background-color: #000000;
-    padding: 12px;
-    border: 2px inset rgba(255,255,255,.8);
-    position: relative;
-    width: 400px;
     overflow: hidden;
-    margin: 0 20px 40px;
+    margin-bottom: 1.5%;
 }
-.entry p:last-child {
+.post-content {
+    font-size: 24px;
+    border: 2px inset rgba(255,255,255,.8);
+    width: 100%;
+    padding: 10px;
+    float: left;
+}
+.post p:last-child {
     margin: 0 !important;
 }
-.entry .media {
+.audio .video {
     width: 100%;
 }
-.entry .media iframe {
+.audio .video iframe {
     display: block;
     width: 100%;
 }
-.entry .photo {
-    position: relative;
-    overflow: hidden;
-}
-.entry .photo img {
+.post img {
+    display: block;
     width: 100%;
 }
-.entry .lightbox a {
+.lightbox a {
     outline: none;
 }
-.entry .text {
-    position: relative;
+.captions {
+    padding: 10px;
 }
-.entry .captions {
-    padding: 20px 0;
-}
-.entry .text.chat li {
+.chat li {
     padding: 10px;
     list-style: none;
 }
-.entry .text h2 a.link {
-    display: block;
-    text-decoration: none;
-}
-.entry .text h2 a.link:after {
-    content: "\2192";
-    margin: 0 0 0 20px;
-}
-.entry .text .quote-symbol {
-    position: absolute;
-    top: -40px;
-    left: -5px;
-    font: 200px arial;
-    opacity: .1;
-}
-.entry .text .source {
+.source {
     padding: 20px 0 0;
 }
-.entry p, .entry blockquote {
-    margin: 0 0 20px
+.post p, .post blockquote {
+    margin: 0 0 20px;
 }
-.entry .text.chat li.odd {
+.chat li.odd {
     background: #000000;
 }
-.entry .text .source {
+.source {
     border-top: 1px solid rgba(255,255,255,.2)
 }
-.entry .text h2 a.link {
-    color: #ffffff;
+.chat li {
+    font-size: 24px;
+    font-family: Georgia, serif;
+}
+.details {
     background-color: #000000;
+    font-size: 24px;
+    text-align: right;
+    height: 20px;
 }
-.entry .text.chat li {
-    font: 18px "Share Tech Mono", monospace;
-    letter-spacing: -.2px;
-}
-.entry .details {
-    background-color: #000000;
-    word-spacing: 0px;
-    margin-left: 200px;
-    padding-bottom: 10px;
-}
-.entry .details a {
-    font: 14px "Share Tech Mono", monospace;
+.details a {
+    font-family: Georgia, serif;
+    font-size: 24px;
     color: #ffffff;
+    text-align: right;
 }
-#P #posts {
-    width: 1040px;
-}
-#P .entry {
+.like_and_reblog_buttons {
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    list-style: none;
+    }
+.like_and_reblog_buttons li {
     float: left;
-    width: 600px !important;
+    padding: 8px 8px;
+    height: 20px;
+    line-height: 20px;
+    }
+.like_and_reblog_buttons li a {
+    color: #ffffff;
+    font-family: Georgia, serif;
+    }
+.like_and_reblog_buttons li a:hover {
+    color: #999999;
+    text-decoration: none;
+    }
+.like_and_reblog_buttons li:first-child {
+    border-right: 0px solid #e8e8e8;
+    }
+.dropbtn-nav {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 6px 8px;
+    border: 1px solid #ffffff;
+}
+.dropdown-nav {
+    position: fixed;
+    left: 8px;
+    top: 4px;
+    display: inline-block;
+    z-index: 2;
+}
+.dropdown-content-nav{
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #000000;
+    display: none;
+    padding: 0 4px;
+    position: absolute;
+    max-height: 200px;
+    min-width: 1200px;
+    border: 1px solid #ffffff;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content-nav a {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    background: -webkit-linear-gradient(90deg, #263238, #37474f, #455a64, #546e7a, #607d8b, #78909c, #90a4ae, #b0bec5, #cfd8dc, #eceff1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 4px 8px;
+    display: inline;
+}
+.dropdown-content-nav a:hover {
+    font-family: Georgia, serif;
+    color: #888888;
+    background-color: #000000;
+    text-decoration: none;
+}
+.dropdown-nav:hover .dropdown-content-nav {
+    display: block;
 }
 #P .p-b {
+    background-color: #000000;
+    border: 2px inset rgba(255,255,255,.8);
+    padding: 10px;
     float: right;
-    width: 400px;
+    width: 48.5%;;
+    height: auto;
 }
-#P .entry, #P .p-b {
+#P .post-content, #P .p-b {
     margin: 0 !important;
 }
-
-#P .entry .text, #P .entry .media, #P .entry .photo.photoset {
+#P .text .quote .chat .link .answer, #P .audio .video, #P .photo.photoset {
     bottom: 0 !important;
 }
 #P .p-b section ol.notes {
@@ -259,22 +314,18 @@ li {
     padding: 20px 0;
 }
 #P .p-b section.o span a {
-    font: 18px Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-family: Georgia, serif;
     color: #ffffff;
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
 }
 #P .p-b section ol.notes li.more_notes_link_container, #P .p-b section ol.notes li.more_notes_link_container a {
-    font: 18px Georgia, "Times New Roman", serif;
+    font-size: 14px; 
+    font-family: Georgia, serif;
     color: #ffffff;
-    letter-spacing: 1px;
 }
-.grid-container {
-    display: grid;
-    width: 100%;
-    padding-top: 40px;
-    grid-gap: 40px;
-    grid-template-columns: auto auto auto;
-    grid-auto-rows: auto;
+#footer {
+    visibility: hidden !important;
 }
