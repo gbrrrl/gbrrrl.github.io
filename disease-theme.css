@@ -36,15 +36,22 @@ blockquote {
     padding: 0 0 0 15px;
     margin: 0;
 }
-h1, h2, h3, h4, h5 {
+h2, h3, h4, h5 {
     color: #ffffff;
     margin: 0 0 20px;
     letter-spacing: 2px;
 }
 h1 {
+    color: #ffffff;
     font-family: "Playfair Display", Georgia, sans-serif;
-    font-size: 32px;
+    font-size: 60px;
     text-align: center;
+    margin: 0px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+h1:hover {
+    text-decoration: underline;
 }
 h2, h3, h4, h5 {
     font-family: "Playfair Display", Georgia, serif;
@@ -211,7 +218,7 @@ li {
     font-size: 26px;
     color: #ffffff;
     background-color: #000000;
-    padding: 0px 4px;
+    padding: 4px 8px;
     border: 1px solid #ffffff;
 }
 .dropdown-nav {
@@ -229,11 +236,13 @@ li {
     background-color: #000000;
     letter-spacing: 2px;
     display: none;
-    padding: 0px 8px;
+    padding: 10px 20px;
+    padding-bottom: 4px;
     position: absolute;
-    max-height: 550px;
-    min-width: 450px;
+    max-height: 600px;
+    min-width: 800px;
     border: 1px solid #ffffff;
+    text-align: center;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -244,55 +253,17 @@ li {
     font-size: 24px;
     color: #ffffff;
     background-color: #000000;
-    padding: 0px 8px;
-    display: block;
+    padding: 2px 4px;
+    display: inline;
+    text-align: center;
 }
 .dropdown-content-nav a:hover {
     font-family: "Anonymous Pro", monospace;
-    color: #ffffff;
-    background-color: #333333;
+    color: #888888;
     text-decoration: none;
 }
 .dropdown-nav:hover .dropdown-content-nav {
     display: block;
-}
-.g_discogs {
-    background: -webkit-linear-gradient(90deg, #999999, #777777, #555555);
-}
-.g_discord {
-    background: -webkit-linear-gradient(0deg, #7289da, #424549);
-}
-.g_giphy {
-    background: -webkit-linear-gradient(0deg, #f0535a, #fff35b, #00ff99, #03ccff, #9933ff 30%);
-}
-.g_github {
-    background: -webkit-linear-gradient(0deg, #eeeeee, #333333);
-}
-.g_goodreads {
-    background: -webkit-linear-gradient(0deg, #e9e5cd, #75420e, #553b08, #aaaaaa);
-}
-.g_instagram {
-    background: -webkit-linear-gradient(0deg, #5b51d8, #c13584, #f77737, #ffdc80, #833ab4, #e1306c, #fd1d1d, #405de6);
-}
-.g_letterboxd {
-    background: -webkit-linear-gradient(90deg, #ff8000 25%, #ffffff, #00e054, #40bcf4);
-}
-.g_mastodon {
-    background: -webkit-linear-gradient(90deg, #6364ff, #563acc, #17063b);
-}
-.g_soundcloud {
-    background: -webkit-linear-gradient(15deg, #ff7700 100%, #000000);
-}
-.g_spotify {
-    background: -webkit-linear-gradient(15deg, #1db954 100%, #000000);
-}
-.g_youtube {
-    background: -webkit-linear-gradient(15deg, #ff0000 100%, #000000);
-}
-.g_discogs, .g_discord, .g_giphy, .g_github, .g_goodreads, .g_instagram, .g_letterboxd, .g_mastodon, .g_soundcloud, .g_spotify, .g_youtube {
-    font-size: 24px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 #P .p-b {
     background-color: #000000;
