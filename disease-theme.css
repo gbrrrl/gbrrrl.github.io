@@ -265,12 +265,19 @@ li {
 .dropdown-nav:hover .dropdown-content-nav {
     display: block;
 }
+#P .post {
+    width: 60%;
+}
+#P .post-content {
+    float: left;
+    width: 100% !important;
+}
 #P .p-b {
     background-color: #000000;
     border: 2px inset rgba(255,255,255,.8);
     padding: 10px;
     float: right;
-    width: 48.5%;;
+    width: 39% !important;
     height: auto;
 }
 #P .post-content, #P .p-b {
