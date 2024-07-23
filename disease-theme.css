@@ -4,7 +4,7 @@ html {
 }
 body {
     font-family: "Playfair Display", Georgia, serif;
-    font-size: 24px;
+    font-size: 16px;
     color: #ffffff;
     background: linear-gradient(300deg,#000000,#111111,#000000,#222222,#000000,#333333,#000000,#444444,#000000,#555555);
     background-size: 600% 600%;
@@ -20,7 +20,7 @@ body {
 }
 a {
     font-family: "Playfair Display", Georgia, serif;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
     color: #848484;
     word-wrap: break-word;
@@ -55,7 +55,7 @@ h1:hover {
 }
 h2, h3, h4, h5 {
     font-family: "Playfair Display", Georgia, serif;
-    font-size: 24px;
+    font-size: 16px;
 }
 img {
     display: block;
@@ -97,10 +97,10 @@ li {
     clear: both;
 }
 #post-sizer, .post {
-    width: 48.5%;
+    width: 32.4%;
 }
 #gutter-sizer {
-    width: 1.5%;
+    width: 1%;
 }
 @media screen and (max-width: 600px) {
   .post {
@@ -111,10 +111,10 @@ li {
     position: relative;
     background-color: #000000;
     overflow: hidden;
-    margin-bottom: 1.5%;
+    margin-bottom: 1%;
 }
 .post-content {
-    font-size: 24px;
+    font-size: 16px;
     border: 2px inset rgba(255,255,255,.8);
     width: 100%;
     padding: 10px;
@@ -175,18 +175,18 @@ li {
     border-top: 1px solid rgba(#ffffff,.1);
 }
 .post-content .text.chat li {
-    font-size: 24px;
+    font-size: 16px;
     font-family: "Playfair Display", Georgia, serif;
 }
 .details {
     background-color: #000000;
-    font-size: 24px;
+    font-size: 16px;
     text-align: right;
     height: 20px;
 }
 .details a {
     font-family: Georgia, serif;
-    font-size: 24px;
+    font-size: 16px;
     color: #ffffff;
     text-align: right;
 }
