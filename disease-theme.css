@@ -6,9 +6,9 @@ body {
     font-family: "Playfair Display", Georgia, serif;
     font-size: 16px;
     color: #ffffff;
-    background: linear-gradient(300deg,#000000,#111111,#000000,#222222,#000000,#333333,#000000,#444444,#000000,#555555);
+    background: linear-gradient(300deg,#111111,#222222,#333333,#444444,#555555,#666666,#777777,#888888,#999999);
     background-size: 600% 600%;
-    animation: gradient-animation 20s ease infinite;
+    animation: gradient-animation 2s ease infinite;
     background-color: #000000;
     margin: 0 auto;
     padding: 0;
