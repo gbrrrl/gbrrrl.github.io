@@ -20,7 +20,7 @@ body {
 }
 a {
     font-family: "Playfair Display", Georgia, serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     color: #848484;
     word-wrap: break-word;
@@ -55,7 +55,7 @@ h1:hover {
 }
 h2, h3, h4, h5 {
     font-family: "Playfair Display", Georgia, serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 img {
     display: block;
@@ -114,7 +114,7 @@ li {
     margin-bottom: 1%;
 }
 .post-content {
-    font-size: 16px;
+    font-size: 14px;
     border: 2px inset rgba(255,255,255,.8);
     width: 100%;
     padding: 10px;
