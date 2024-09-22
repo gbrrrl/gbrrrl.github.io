@@ -1,52 +1,76 @@
 body {
-background: linear-gradient(180deg,#999999,#888888,#777777,#666666,#555555,#444444,#333333,#222222,#111111);
-color: #000000;
-font-family: Courier, monospace;
-font-size: 24px;
+    background: linear-gradient(180deg, #999999, #888888, #777777, #666666, #555555, #444444, #333333, #222222, #111111);
+    color: #000000;
+    font-family: Courier, monospace;
+    font-size: 24px;
 }
+
 a {
-color: #555555;
+    color: #555555;
 }
-h2, h2 a {
-font-family: Garamond, serif;
-color: #ffffff;
-font-size: 50px;
-text-align: center;
-text-decoration: none;
-letter-spacing: 2px;
+
+h1,
+h1 a {
+    font-family: Garamond, serif;
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
 }
+
+h1 a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+h2,
+h2 a {
+    font-family: Garamond, serif;
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
 h2 a:hover {
-color: #ffffff;
-text-decoration: underline;
+    color: #ffffff;
+    text-decoration: underline;
 }
+
 h3 {
-font-family: Garamond, serif;
-font-size: 16px;
-text-align: right;
+    font-family: Garamond, serif;
+    font-size: 16px;
+    text-align: right;
 }
+
 ul {
-color: #ffffff;
-font-size: 24px;
-list-style-type: none;
-margin: auto;
-margin-top: -25px;
-padding: 20px;
-max-width: 75%;
-background: #000000;
+    color: #ffffff;
+    font-size: 24px;
+    list-style-type: none;
+    margin: auto;
+    margin-top: -25px;
+    padding: 20px;
+    max-width: 75%;
+    background: #000000;
 }
+
 li a {
-display: block;
-color: #ffffff;
-font-size: 20px;
-text-decoration: none;
-padding: 10px;
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
 }
+
 li a:hover {
-background-color: #555555;
-color: #ffffff;
+    background-color: #555555;
+    color: #ffffff;
 }
+
 @media screen and (max-width: 600px) {
-ul {
-max-width: 100%;
-}
+    ul {
+        max-width: 100%;
+    }
 }
