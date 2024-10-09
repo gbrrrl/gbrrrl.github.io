@@ -17,13 +17,13 @@ h1 a {
     text-align: center;
     text-decoration: none;
     letter-spacing: 2px;
-	display: hidden;
+	visibility: hidden;
 }
 
 h1 a:hover {
     color: #ffffff;
     text-decoration: underline;
-	display: hidden;
+	visibility: hidden;
 }
 
 h2,
