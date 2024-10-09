@@ -64,6 +64,9 @@ a {
   background-color: #000;
   padding: 20px;
 }
+.main img {   
+	max-width: 80%;
+}
 
 .footer {
   padding: 20px;
