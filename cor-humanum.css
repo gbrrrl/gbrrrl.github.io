@@ -1,0 +1,154 @@
+body {
+    font-family: Garamond, serif;
+    font-size: 22px;
+    color: #000000;
+    background-color: #ffffff;
+    }
+a {
+    font-weight: bold;
+    color: #0070e0;
+    text-decoration: none;
+    }
+a:hover {
+    font-weight: bold;
+    color: #0070e0;
+    text-decoration: underline;
+    }
+h1 {
+    font-size: 80px;
+    color: #000000;
+    text-align: center;
+    }
+h1 a {
+    color: #000000;
+    }
+    h1 a:hover {
+    color: #4f4f4f;
+    text-decoration: none;
+    }
+h2 {
+    font-size: 22px;
+    color: #000000;
+    }
+h3 {
+    font-size: 22px;
+    color: #000000;
+    }
+h4 {
+    font-size: 22px;
+    color: #000000;
+    }
+blockquote {
+    font-style: normal;
+    border-left: 2px solid black;
+    padding-left: 20px;
+    }
+.header {
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+    max-width: 100%;
+    text-align: center;
+    border: 1px solid white;
+    }
+.footer {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    max-width: 100%;
+    border: 1px solid black;
+    }
+.lbn {
+    padding: 2px;
+    border: 1px solid black;
+    width: auto;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: 1;
+    }
+.entry {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    max-width: 100%;
+    }
+.entry img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+.entry .text.chat li.odd {
+    background: #d3d3d3;
+    list-style-type: none;
+    }
+.entry .text .source {
+    border-top: 1px solid black;
+    }
+.entry .text h2 a.link {
+    color: #000000;
+    background-color: #ffffff;
+    }
+.entry .text.chat li {
+    font-size: 18px;
+    list-style-type: none;
+    }
+.like_and_reblog_buttons {
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    list-style: none;
+    }
+.like_and_reblog_buttons li {
+    float: left;
+    margin: 0;
+    padding: 7px 15px;
+    height: 20px;
+    }
+.like_and_reblog_buttons li a {
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    }
+.like_and_reblog_buttons li a:hover {
+    color: #0070e0;
+    text-decoration: none;
+    }
+.like_and_reblog_buttons li:first-child {
+    border-right: 1px solid #e8e8e8;
+    }
+ol.notes {
+    padding: 0px;
+    margin: 25px 0px;
+    list-style-type: none;
+    border-bottom: solid 1px #ccc;
+    }
+ol.notes li.note {
+    border-top: solid 1px #ccc;
+    padding: 10px;
+    }
+ol.notes li.note img.avatar {
+    vertical-align: -4px;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    }
+ol.notes li.note span.action {
+    font-weight: bold;
+    }
+ol.notes li.note .answer_content {
+    font-weight: normal;
+    }
+ol.notes li.note blockquote {
+    border-color: #eee;
+    padding: 4px 10px;
+    margin: 10px 0px 0px 25px;
+    }
+ol.notes li.note blockquote a {
+    text-decoration: none;
+    }
+.permalink  {
+    font-size: 18px;
+    font-weight: bold;
+    }
