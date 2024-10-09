@@ -1,77 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
 body {
-    background-image: url("https://i.imgur.com/zyuUm8N.gif");
-	background-repeat: repeat;
-    color: #000000;
-    font-family: Courier, monospace;
-    font-size: 24px;
+  background-image: url("https://i.imgur.com/zyuUm8N.gif");
+  background-repeat: repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
-a {
-    color: #555555;
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #000000;
+  color: white;
 }
 
-h1,
-h1 a {
-    font-family: Courier, monospace;
-    color: #ffffff;
-    font-size: 50px;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 2px;
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
 }
 
-h1 a:hover {
-    color: #ffffff;
-    text-decoration: underline;
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
 
-h2,
-h2 a {
-    font-family: Courier, monospace;
-    color: #ffffff;
-    font-size: 50px;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 2px;
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
 }
 
-h2 a:hover {
-    color: #ffffff;
-    text-decoration: underline;
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
 }
 
-h3 {
-    font-family: Courier, monospace;
-    font-size: 16px;
-    text-align: right;
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-ul {
-    color: #ffffff;
-    font-size: 24px;
-    list-style-type: none;
-    margin: auto;
-    margin-top: -25px;
-    padding: 20px;
-    max-width: 75%;
-    background: #000000;
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
 }
 
-li a {
-    display: block;
-    color: #ffffff;
-    font-size: 20px;
-    text-decoration: none;
-    padding: 10px;
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
 }
 
-li a:hover {
-    background-color: #555555;
-    color: #ffffff;
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
 }
 
-@media screen and (max-width: 600px) {
-    ul {
-        max-width: 100%;
-    }
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
 }
