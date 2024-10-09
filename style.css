@@ -8,6 +8,7 @@ body {
   background-repeat: repeat;
   color: #fff;
   font-family: Courier, monospace;
+  font-size: 16px;
   margin: 0;
 }
 
@@ -58,10 +59,9 @@ a {
   color: #fff;
 }
 
-.main {   
-  -ms-flex: 80%; /* IE10 */
-  flex: 80%;
-  background-color: #000;
+.main {
+  text-align: center;
+  background: #000;
   padding: 20px;
 }
 .main img {   
