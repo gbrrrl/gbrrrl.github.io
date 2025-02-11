@@ -1,2 +1,110 @@
-body {font-family: "Raleway", Arial, sans-serif}
-.w3-row img {margin-bottom: -8px}
+html {
+    position: relative;
+    width: 100%;
+}
+body {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 14px;
+    color: #ffffff;
+    background: linear-gradient(300deg,#111111,#222222,#333333,#444444,#555555,#666666,#777777,#888888,#999999);
+    background-size: 600% 600%;
+    animation: gradient-animation 2s ease infinite;
+    background-color: #000000;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 0;
+}
+@keyframes gradient-animation {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+a {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #848484;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+a:hover {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: underline;
+}
+blockquote {
+    border-left: 4px solid rgba(#ffffff,.1);
+    padding: 0 0 0 15px;
+    margin: 0;
+}
+h2, h3, h4, h5 {
+    color: #ffffff;
+    margin: 0 0 20px;
+    letter-spacing: 0px;
+}
+h1 {
+    color: #ff0000;
+    font-family: "Playfair Display", Georgia, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    line-height: 0px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+h1:hover {
+    text-decoration: underline;
+}
+h4, h5 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 14px;
+}
+h2, h3 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 16px;
+}
+#container {
+    position: relative;
+    right: 0;
+}
+.main {
+    position: relative;
+    margin: auto;
+    margin-left: 10px;
+    padding: 10px 0;
+}
+.nav {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: normal;
+    font-size: 14px;
+    height: 50px;
+    min-width: 100%;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 0px 0px;
+    border: 1px solid #ffffff;
+    text-align: left;
+    position: fixed;
+    left: 8px;
+    top: 4px;
+    display: inline-block;
+    box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.nav a, img {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: normal;
+    color: #ffffff;
+    padding-top: 2px;
+    display: inline;
+}
+.nav a {
+    font-size: 14px;
+}
+.nav img {
+    word-spacing: .2px;
+}
+.nav a:hover {
+    font-family: "Anonymous Pro", monospace;
+    color: #888888;
+    text-decoration: none;
+}
