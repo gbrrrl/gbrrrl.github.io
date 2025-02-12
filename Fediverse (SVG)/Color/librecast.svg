@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" baseProfile="full" width="800" height="800" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style>
+.node, g.bars rect {
+	fill: white;
+	stroke: #3365a3;
+	stroke-width: 5%;
+}
+g.bars rect {
+	stroke-width: 1;
+	fill: #3365a3;
+}
+.graphedge {
+	stroke: #3365a3;
+	stroke-width: 2%;
+}
+
+@media (prefers-color-scheme: light) {
+	.outer {
+		fill: white;
+	}
+	.node {
+		fill: white;
+	}
+}
+@media (prefers-color-scheme: dark) {
+	.outer {
+		fill: black;
+	}
+	.node {
+		fill: black;
+	}
+}
+</style>
+
+<defs>
+	<symbol id="librestack">
+		<circle class="node" cx="50%" cy="50%" r="45%"/>
+		<g class="bars">
+			<rect x="20%" y="25%" width="60%" height="5%" stroke="#3365a3"/>
+			<rect x="20%" y="36.25%" width="60%" height="5%" stroke="#3365a3"/>
+			<rect x="20%" y="47.5%" width="60%" height="5%" stroke="#3365a3"/>
+			<rect x="20%" y="58.75%" width="60%" height="5%" stroke="#3365a3"/>
+			<rect x="20%" y="70%" width="60%" height="5%" stroke="#3365a3"/>
+		</g>
+	</symbol>
+</defs>
+
+<circle class="outer" cx="50%" cy="50%" r="45%"/>
+
+<line class="graphedge" x1="19.5%" y1="50%" x2="35.5%" y2="50%"/>
+<line class="graphedge" x1="35.5%" y1="77.5%" x2="35.5%" y2="49%"/>
+<line class="graphedge" x1="64.5%" y1="20.5%" x2="35.5%" y2="50%"/>
+
+<line class="graphedge" x1="64.5%" y1="77.5%" x2="35.5%" y2="55%"/>
+
+<use x="28%" y="15%" height="15%" width="15%" xlink:href="#librestack"/>
+<use x="57%" y="15%" height="15%" width="15%" xlink:href="#librestack"/>
+
+<use x="12%" y="42.5%" height="15%" width="15%" xlink:href="#librestack"/>
+<use x="42.5%" y="42.5%" height="15%" width="15%" xlink:href="#librestack"/>
+<use x="73%" y="42.5%" height="15%" width="15%" xlink:href="#librestack"/>
+
+<use x="28%" y="70%" height="15%" width="15%" xlink:href="#librestack"/>
+<use x="57%" y="70%" height="15%" width="15%" xlink:href="#librestack"/>
+
+</svg>
