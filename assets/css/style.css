@@ -1,81 +1,59 @@
-* {
-    box-sizing: border-box;
-}
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
+    background-image: url(https://www.w3schools.com/howto/img_link_tree_template1_bg.jpg); /* The image used for background*/
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
-.header {
-    padding: 40px;
-    text-align: center;
-    background: black;
-    color: white;
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
-.header h1 {
-    font-size: 60px;
+
+.image-container {
+  text-align: center;
+  width: 100%;
 }
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  jusify-content: center;
+  align-items: center;
 }
-.navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
+
+.link {
+  min-width: 50% !important;
 }
-.navbar a.right {
-    float: right;
+
+@media (min-width: 1200px) .container {
+  max-width: 1140px;
 }
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
+
+@media (min-width: 992px) .container {
+  max-width: 960px;
 }
-.navbar a.active {
-    background-color: #666;
-    color: white;
-}
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-.side {
-    -ms-flex: 30%;
-    flex: 30%;
-    background-color: #f1f1f1;
-    padding: 20px;
-}
-.main {
-    -ms-flex: 70%;
-    flex: 70%;
-    background-color: black;
-    padding: 20px;
-}
-.fakeimg {
-    background-color: #aaa;
+
+@media (min-width: 768px) {
+.container {
+    max-width: 720px;
+  }
+
+.link {
     width: 100%;
-    padding: 20px;
+  }
 }
-.footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
+
+@media (min-width: 576px) {
+.container {
+    max-width: 540px;
+  }
 }
-@media screen and (max-width: 700px) {
-    .row {
-        flex-direction: column;
-    }
-}
-@media screen and (max-width: 400px) {
-    .navbar a {
-        float: none;
-        width: 100%;
-    }
+
+.w3-purple, .w3-hover-purple:hover {
+color: #fff!important;
+background-color: rgba(156, 39, 176, 0.6) !important;
 }
