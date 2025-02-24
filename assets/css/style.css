@@ -1,5 +1,10 @@
 body {
-    background: linear-gradient(180deg,#999999,#888888,#777777,#666666,#555555,#444444,#333333,#222222,#111111);
+    background-color: #000000;
+	background-image: ('https://gbrrrl.com/assets/theme/hypno_bg.gif');
+	background-size: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: none;
     color: #000000;
     font-family: Teko, Courier, monospace;
     font-size: 24px;
