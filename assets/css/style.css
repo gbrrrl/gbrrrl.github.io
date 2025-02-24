@@ -1,10 +1,17 @@
 body {
     background-color: #000000;
 	background-image: ('https://gbrrrl.com/assets/theme/hypno_bg.gif');
-	background-size: 100%;
-	background-attachment: fixed;
-	background-position: center;
+	background-position: fixed;
 	background-repeat: none;
+	margin: 0px; 
+	border: 0px; 
+	padding: 0px;
+	left: 0px; 
+	top: 0px;
+	width: 100%; 
+	height: 100%;
+	overflow: hidden; 
+	z-index: 0;
     color: #000000;
     font-family: Teko, Courier, monospace;
     font-size: 24px;
