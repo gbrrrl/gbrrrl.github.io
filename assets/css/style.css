@@ -1,10 +1,10 @@
 body {
     background-color: #000000;
-	background-image: url("https://gbrrrl.com/assets/theme/hypno_bg.gif");
+	background-image: url('https://gbrrrl.com/assets/theme/hypno_bg.gif');
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 100%;
+	background-size: 100% 100%;
     color: #000000;
     font-family: Teko, Courier, monospace;
     font-size: 24px;
@@ -13,7 +13,7 @@ body {
 a {
     color: #555555;
 }
-h2, h2 a {
+h1, h1 a {
     font-family: Teko, Courier, monospace;
     color: #ffffff;
     font-size: 50px;
@@ -21,41 +21,19 @@ h2, h2 a {
     text-decoration: none;
     letter-spacing: 2px;
     }
-h2 a:hover {
+h1 a:hover {
     color: #ffffff;
     text-decoration: underline;
 }
-h3 {
-    font-family: Teko, Courier, monospace;
-    font-size: 32px;
-    text-align: center;
-}
-ul {
+.main {
     color: #ffffff;
-    font-size: 22px;
-    list-style-type: none;
+    background-color: #000000;
+	font-family: Teko, Courier, monospace;
+    font-size: 24px;
+	text-align: center;
+    letter-spacing: 2.5px;
     margin: auto;
-    margin-top: -25px;
+    margin-top: 0px;
     padding: 20px;
     max-width: 50%;
-    background-color: #000000;
-    }
-li a {
-    display: block;
-    color: #ffffff;
-    font-size: 30px;
-    text-align: left;
-    text-decoration: none;
-    padding-left: 20px;
-    padding: 4px;
-	background-color: #000000;
-    }
-li a:hover {
-    background-color: #555555;
-    color: #ffffff;
-    }
-    @media screen and (max-width: 600px) {
-  ul {
-    max-width: 100%;
-  }
 }
