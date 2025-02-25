@@ -74,11 +74,11 @@ footer {
 	text-align: center;
     letter-spacing: 2.5px;
     margin: auto;
+	margin-bottom: 0px;
     padding: 8px;
     max-width: 60%;
 }
 #content {
-	display: block;
 	color: #ffffff;
     background-color: #000000;
 	font-family: Teko, Courier, monospace;
