@@ -34,7 +34,6 @@ header {
 	text-align: center;
     letter-spacing: 2.5px;
     margin: auto;
-    margin-top: 0px;
     padding: 20px;
     max-width: 60%;
 }
@@ -42,12 +41,21 @@ nav {
 	color: #ffffff;
     background-color: #000000;
 	font-family: Teko, Courier, monospace;
-    font-size: 24px;
-	text-align: center;
-    letter-spacing: 2.5px;
+    font-size: 16px;
+	text-align: left;
+    letter-spacing: .5px;
     margin: auto;
+	margin-top: 0px;
     padding: 20px;
     max-width: 60%;
+}
+nav a {
+	font-family: Teko, Courier, monospace;
+    color: #ffffff;
+}
+nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
 footer {
 	color: #ffffff;
