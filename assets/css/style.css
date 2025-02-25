@@ -9,6 +9,7 @@ body {
     font-family: Teko, Courier, monospace;
     font-size: 24px;
     letter-spacing: 2.5px;
+	max-height: 100%;
     }
 a {
     color: #555555;
@@ -35,5 +36,6 @@ h1 a:hover {
     margin: auto;
     margin-top: 0px;
     padding: 20px;
-    max-width: 50%;
+    max-width: 60%;
+	max-height: 100%;
 }
