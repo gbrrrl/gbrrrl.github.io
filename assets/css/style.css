@@ -77,7 +77,8 @@ footer {
     padding: 8px;
     max-width: 60%;
 }
-.content {
+#content {
+	display: block;
 	color: #ffffff;
     background-color: #000000;
 	font-family: Teko, Courier, monospace;
