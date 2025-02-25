@@ -9,6 +9,8 @@ body {
     font-family: Teko, Courier, monospace;
     font-size: 24px;
     letter-spacing: 2.5px;
+	margin: auto;
+	padding: 10px;
     }
 a {
     color: #555555;
