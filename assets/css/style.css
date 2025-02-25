@@ -88,16 +88,15 @@ footer {
     padding: 8px;
     max-width: 60%;
 }
-.main {
+#main {
     color: #ffffff;
     background-color: #000000;
 	font-family: Teko, Courier, monospace;
     font-size: 16px;
-	position: absolute;
     margin: auto;
     margin-top: 0px;
     padding: 0px;
     max-width: 66%;
 	min-height: 100%;
-	z-index: 0;
+	z-index: -1;
 }
