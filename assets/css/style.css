@@ -46,7 +46,6 @@ nav {
 	text-align: center;
     letter-spacing: 2.5px;
     margin: auto;
-    margin-top: 0px;
     padding: 20px;
     max-width: 60%;
 }
@@ -58,7 +57,7 @@ footer {
 	text-align: center;
     letter-spacing: 2.5px;
     margin: auto;
-    margin-top: 0px;
+    margin-bottom: 0px;
     padding: 20px;
     max-width: 60%;
 }
@@ -71,6 +70,7 @@ footer {
     letter-spacing: 2.5px;
     margin: auto;
     margin-top: 0px;
+	margin-bottom: 0px;
     padding: 20px;
     max-width: 60%;
 	height: 100%;
