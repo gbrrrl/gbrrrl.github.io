@@ -26,6 +26,42 @@ h1 a:hover {
     color: #ffffff;
     text-decoration: underline;
 }
+header {
+	color: #ffffff;
+    background-color: #000000;
+	font-family: Teko, Courier, monospace;
+    font-size: 24px;
+	text-align: center;
+    letter-spacing: 2.5px;
+    margin: auto;
+    margin-top: 0px;
+    padding: 20px;
+    max-width: 60%;
+}
+nav {
+	color: #ffffff;
+    background-color: #000000;
+	font-family: Teko, Courier, monospace;
+    font-size: 24px;
+	text-align: center;
+    letter-spacing: 2.5px;
+    margin: auto;
+    margin-top: 0px;
+    padding: 20px;
+    max-width: 60%;
+}
+footer {
+	color: #ffffff;
+    background-color: #000000;
+	font-family: Teko, Courier, monospace;
+    font-size: 24px;
+	text-align: center;
+    letter-spacing: 2.5px;
+    margin: auto;
+    margin-top: 0px;
+    padding: 20px;
+    max-width: 60%;
+}
 .main {
     color: #ffffff;
     background-color: #000000;
