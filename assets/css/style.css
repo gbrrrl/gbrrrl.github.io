@@ -16,7 +16,7 @@ body {
 
 .header {
     max-width: 60%;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     background: #000000;
     color: #ffffff;
@@ -32,10 +32,7 @@ body {
 
 .navbar {
     max-width: 60%;
-    overflow: hidden;
     background-color: #818589;
-    position: sticky;
-    position: -webkit-sticky;
     padding: 10px;
     border: 1px solid black;
     margin: auto;
@@ -62,7 +59,7 @@ body {
 
 .navbar a.active {
     background-color: #2c2c2c;
-    color: white;
+    color: #ffffff;
 }
 
 .main {   
