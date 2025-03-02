@@ -41,6 +41,7 @@ header {
 	text-align: center;
     letter-spacing: 2.5px;
     margin: auto;
+    margin-bottom: 50px;
     padding: 8px;
     max-width: 60%;
 }
@@ -53,6 +54,7 @@ nav {
     letter-spacing: .5px;
     margin: auto;
 	margin-top: 0px;
+    margin-bottom: 50px;
     padding: 8px;
     max-width: 60%;
 }
@@ -76,6 +78,7 @@ footer {
 	text-align: center;
     letter-spacing: 2.5px;
     margin: auto;
+    margin-bottom: 50px;
     padding: 8px;
     max-width: 60%;
 }
