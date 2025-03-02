@@ -114,9 +114,9 @@ body {
 
 
 .column {
-    flex: 47%;
-    max-width: 47%;
-    padding: 0 4px;
+    flex: 48%;
+    max-width: 48%;
+    padding: 0 6px;
 }
 
 .column img {
