@@ -27,6 +27,7 @@ body {
 /* Increase the font size of the heading */
 .header h1 {
     font-size: 40px;
+    display: none!important;
     visibility: hidden!important;
 }
 
