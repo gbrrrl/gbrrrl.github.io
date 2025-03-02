@@ -91,13 +91,3 @@ p {
     padding: 8px;
     max-width: 60%;
 }
-#content {
-	color: #ffffff;
-    background-color: #000000;
-	font-family: Teko, Courier, monospace;
-    font-size: 16px;
-	text-align: left;
-    margin: auto;
-    padding: 12px;
-    max-width: 60%;
-}
