@@ -20,7 +20,7 @@ body {
 .header {
     padding: 40px;
     text-align: center;
-    background: #808080;
+    background: #000000;
     color: #ffffff;
 }
 
@@ -80,7 +80,7 @@ body {
 .side {
     -ms-flex: 30%; /* IE10 */
     flex: 30%;
-    background-color: #36454F;
+    background-color: #000000;
     padding: 20px;
 }
 
