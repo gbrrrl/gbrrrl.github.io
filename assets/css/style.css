@@ -1,5 +1,5 @@
 body {
-    font-family: 'Oxygen Mono', monospace;
+    font-family: 'Syne Mono', monospace;
     font-size: 18px;
     color: #ffffff;
 	background-image: url('https://gbrrrl.com/assets/theme/hypno_bg.gif');
@@ -41,7 +41,7 @@ body {
 .navbar a {
     float: left;
     display: inline-block;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 4px 10px;
     text-decoration: none;
@@ -53,7 +53,7 @@ body {
 
 .navbar a:hover {
     background-color: #ddd;
-    color: black;
+    color: #000000;
 }
 
 .navbar a.active {
