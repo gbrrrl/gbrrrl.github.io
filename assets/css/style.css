@@ -1,4 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
 body {
+    font-family: 'Teko', sans-serif;
+    font-size: 18px;
     background-color: #000000;
 	background-image: url('https://gbrrrl.com/assets/theme/hypno_bg.gif');
 	background-attachment: fixed;
@@ -6,18 +13,7 @@ body {
 	background-position: center;
 	background-size: 100%;
     color: #000000;
-	
-    letter-spacing: 2.5px;
-	margin: auto;
-}
-a {
-    color: #555555;
-	font-weight: bold;
-}
-a:hover {
-    color: #555555;
-	font-weight: bold;
-	text-decoration: underline;
+    margin: 0;
 }
 
 /* Header/logo Title */
@@ -51,7 +47,6 @@ a:hover {
     padding: 14px 20px;
     text-decoration: none;
 }
-
 
 /* Right-aligned link */
 .navbar a.right {
