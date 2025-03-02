@@ -11,7 +11,7 @@ body {
 }
 
 .header {
-    display: 
+    display: block;
     max-width: 60%;
     padding: 10px;
     text-align: center;
@@ -28,6 +28,7 @@ body {
 }
 
 .navbar {
+    display: block;
     max-width: 60%;
     background-color: #818589;
     padding: 10px;
@@ -38,7 +39,7 @@ body {
 
 .navbar a {
     float: left;
-    display: block;
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 4px 10px;
@@ -60,6 +61,7 @@ body {
 }
 
 .main {   
+    display: block;
     max-width: 60%;
     background-color: #000000;
     padding: 10px;
@@ -68,6 +70,7 @@ body {
 }
 
 .footer {
+    display: block;
     max-width: 60%;
     padding: 10px;
     text-align: center;
