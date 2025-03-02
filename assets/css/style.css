@@ -29,9 +29,9 @@ body {
     visibility: hidden!important;
 }
 
-h2 {
+.header h2 {
     font-style: italic;
-    text-align: center;
+    font-size: 22px;
 }
 
 .navbar {
