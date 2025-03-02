@@ -56,22 +56,6 @@ body {
     color: white;
 }
 
-.row {  
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-    -ms-flex: 10%; /* IE10 */
-    flex: 10%;
-    background-color: #000000;
-    padding: 10px;
-}
-
 .main {   
     max-width: 50%;
     background-color: #000000;
@@ -79,7 +63,8 @@ body {
 }
 
 .footer {
-    max-width: 50%;    padding: 5px;
+    max-width: 50%;
+    padding: 5px;
     text-align: center;
     background: #2c2c2c;
 }
