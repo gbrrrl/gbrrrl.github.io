@@ -1,13 +1,13 @@
 body {
-    font-family: 'Syne Mono', monospace;
+    font-family: 'Crimson Text', serif;
     font-size: 18px;
     color: #ffffff;
     background-color: #000000;
-	background-image: url('https://gbrrrl.com/assets/theme/hypno_bg.gif');
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
+    background-image: url('https://gbrrrl.com/assets/theme/hypno_bg.gif');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
     margin: auto;
 }
 
@@ -16,6 +16,7 @@ body {
     max-width: 60%;
     padding: 10px;
     padding-top: 40px;
+    padding-bottom: 40px;
     text-align: center;
     background: #000000;
     color: #ffffff;
@@ -30,6 +31,7 @@ body {
 }
 
 .header h2 {
+    font-family: Orienta, serif;
     font-style: italic;
     font-size: 22px;
 }
@@ -39,18 +41,21 @@ body {
     max-width: 60%;
     background-color: #818589;
     padding: 10px;
+    padding-bottom: 40px;
     border: 1px solid black;
     margin: auto;
     top: 0;
 }
 
 .navbar a {
+    font-family: Oswald, monospace;
     float: left;
     display: inline-block;
     color: #ffffff;
     text-align: center;
     padding: 4px 10px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .navbar a.right {
@@ -60,6 +65,7 @@ body {
 .navbar a:hover {
     background-color: #ddd;
     color: #000000;
+    text-transform: uppercase;
 }
 
 .navbar a.active {
@@ -68,27 +74,31 @@ body {
 }
 
 .main {   
+    font-family: 'Crimson Text', serif;
     display: block;
     max-width: 60%;
     background-color: #000000;
     padding: 10px;
     padding-top: 40px;
+    padding-bottom: 60px;
     border: 0px solid black;
     margin: auto;
+    line-height: 2px;
+}
+
+.main h3 {
+    font-size: 28px;
 }
 
 .footer {
     display: block;
     max-width: 60%;
     padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
     background: #2c2c2c;
     border: 0px solid black;
-    word-spacing: 5px;
+    word-spacing: 10px;
     margin: auto;
 }
-
-
-
-
-<link rel="stylesheet" href="https://gbrrrl.com/assets/css/style.css">
