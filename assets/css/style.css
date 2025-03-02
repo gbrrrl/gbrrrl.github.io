@@ -112,8 +112,8 @@ body {
 
 
 .column {
-    flex: 45%;
-    max-width: 45%;
+    flex: 40%;
+    max-width: 40%;
     padding: 0 4px;
 }
 
