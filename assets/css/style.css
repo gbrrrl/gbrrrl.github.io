@@ -78,16 +78,16 @@ body {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-    -ms-flex: 30%; /* IE10 */
-    flex: 30%;
+    -ms-flex: 10%; /* IE10 */
+    flex: 10%;
     background-color: #000000;
     padding: 20px;
 }
 
 /* Main column */
 .main {   
-    -ms-flex: 70%; /* IE10 */
-    flex: 70%;
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
     background-color: #000000;
     padding: 20px;
 }
@@ -117,6 +117,6 @@ body {
 @media screen and (max-width: 400px) {
     .navbar a {
         float: none;
-        width: 100%;
+        width: 70%;
     }
 }
