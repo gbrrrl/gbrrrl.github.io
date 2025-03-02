@@ -81,7 +81,7 @@ body {
     -ms-flex: 10%; /* IE10 */
     flex: 10%;
     background-color: #000000;
-    padding: 20px;
+    padding: 10px;
 }
 
 /* Main column */
@@ -89,14 +89,14 @@ body {
     -ms-flex: 50%; /* IE10 */
     flex: 50%;
     background-color: #000000;
-    padding: 20px;
+    padding: 10px;
 }
 
 /* Fake image, just for this example */
 .fakeimg {
     background-color: #aaa;
-    width: 100%;
-    padding: 20px;
+    width: 10%;
+    padding: 0px;
 }
 
 /* Footer */
