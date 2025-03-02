@@ -8,12 +8,12 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100%;
-    margin: 0;
+    margin: auto;
 }
 
 .header {
-    max-width: 50%;
-    padding: 40px;
+    max-width: 60%;
+    padding: 20px;
     text-align: center;
     background: #000000;
     color: #ffffff;
@@ -28,11 +28,12 @@ body {
 }
 
 .navbar {
-    max-width: 50%;
+    max-width: 60%;
     overflow: hidden;
     background-color: #818589;
     position: sticky;
     position: -webkit-sticky;
+    padding: 10px;
     border: 1px solid black;
     margin: auto;
     top: 0;
@@ -62,7 +63,7 @@ body {
 }
 
 .main {   
-    max-width: 50%;
+    max-width: 60%;
     background-color: #000000;
     padding: 10px;
     border: 1px solid black;
@@ -70,8 +71,8 @@ body {
 }
 
 .footer {
-    max-width: 50%;
-    padding: 5px;
+    max-width: 60%;
+    padding: 10px;
     text-align: center;
     background: #2c2c2c;
     border: 1px solid black;
