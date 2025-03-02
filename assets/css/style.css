@@ -29,6 +29,10 @@ body {
     visibility: hidden!important;
 }
 
+h2 {
+    font-style: italic;
+}
+
 .navbar {
     display: block;
     max-width: 60%;
