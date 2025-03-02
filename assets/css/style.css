@@ -10,7 +10,6 @@ body {
     font-size: 18px;
     letter-spacing: 2.5px;
 	margin: auto;
-	padding: 10px;
 }
 a {
     color: #555555;
@@ -42,20 +41,20 @@ header {
     letter-spacing: 2.5px;
     margin: auto;
     margin-bottom: 50px;
-    padding: 8px;
+    padding: 2px;
     max-width: 60%;
 }
 nav {
 	color: #ffffff;
     background-color: #000000;
 	font-family: 'Teko', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
 	text-align: left;
     letter-spacing: .5px;
     margin: auto;
 	margin-top: 0px;
     margin-bottom: 50px;
-    padding: 8px;
+    padding: 2px;
     max-width: 60%;
 }
 nav a {
@@ -79,7 +78,7 @@ footer {
     letter-spacing: 2.5px;
     margin: auto;
     margin-bottom: 50px;
-    padding: 8px;
+    padding: 2px;
     max-width: 60%;
 }
 p {
@@ -90,7 +89,7 @@ p {
 	text-align: center;
     letter-spacing: 2.5px;
     margin: auto;
-    padding: 8px;
+    padding: 2px;
     max-width: 60%;
     margin-bottom: 50px;
     font-size: 18px;
