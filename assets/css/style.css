@@ -17,6 +17,7 @@ body {
     text-align: center;
     background: #000000;
     color: #ffffff;
+    margin: auto;
 }
 
 .header h1 {
@@ -31,6 +32,7 @@ body {
     background-color: #818589;
     position: sticky;
     position: -webkit-sticky;
+    margin: auto;
     top: 0;
 }
 
@@ -61,6 +63,7 @@ body {
     max-width: 50%;
     background-color: #000000;
     padding: 10px;
+    margin: auto;
 }
 
 .footer {
@@ -68,6 +71,7 @@ body {
     padding: 5px;
     text-align: center;
     background: #2c2c2c;
+    margin: auto;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
