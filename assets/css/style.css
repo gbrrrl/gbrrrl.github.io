@@ -6,10 +6,12 @@ body, html {
 .bg {
     background-image: url("https://gbrrrl.com/assets/theme/hypno_bg.gif");
     height: 100%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed!important;
+    background-attachment: fixed;
+    background-color: #000000;
 }
 
 body {
