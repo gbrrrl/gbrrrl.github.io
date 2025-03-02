@@ -81,7 +81,7 @@ footer {
     max-width: 60%;
 }
 p {
-	color: #ffffff;
+	font-color: #ffffff;
     background-color: #000000;
 	font-family: Teko, Courier, monospace;
     font-size: 24px;
