@@ -72,6 +72,7 @@ h2 {
     max-width: 60%;
     background-color: #000000;
     padding: 10px;
+    padding-top: 10px;
     border: 0px solid black;
     margin: auto;
 }
