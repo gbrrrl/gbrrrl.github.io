@@ -80,7 +80,7 @@ body {
 .side {
     -ms-flex: 30%; /* IE10 */
     flex: 30%;
-    background-color: #6082B6;
+    background-color: #708090;
     padding: 20px;
 }
 
