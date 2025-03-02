@@ -1,15 +1,12 @@
-html {
+body {
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 18px;
+    color: #ffffff;
 	background-image: url('https://gbrrrl.com/assets/theme/hypno_bg.gif');
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100%;
-}
-
-body {
-    font-family: 'Oxygen Mono', monospace;
-    font-size: 18px;
-    color: #ffffff;
     margin: auto;
 }
 
