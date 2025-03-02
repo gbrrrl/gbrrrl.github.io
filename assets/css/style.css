@@ -80,6 +80,9 @@ footer {
     padding: 8px;
     max-width: 60%;
 }
+p {
+    background-color: #000000;
+}
 #content {
 	color: #ffffff;
     background-color: #000000;
