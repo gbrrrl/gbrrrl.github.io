@@ -84,5 +84,6 @@ body {
     text-align: center;
     background: #2c2c2c;
     border: 0px solid black;
+    word-spacing: 5px;
     margin: auto;
 }
