@@ -30,7 +30,7 @@ body {
     max-width: 60%;
     background-color: #818589;
     padding: 10px;
-    border: 1px solid black;
+    border: 0px solid black;
     margin: auto;
     top: 0;
 }
@@ -62,7 +62,7 @@ body {
     max-width: 60%;
     background-color: #000000;
     padding: 10px;
-    border: 1px solid black;
+    border: 0px solid black;
     margin: auto;
 }
 
@@ -71,6 +71,6 @@ body {
     padding: 10px;
     text-align: center;
     background: #2c2c2c;
-    border: 1px solid black;
+    border: 0px solid black;
     margin: auto;
 }
