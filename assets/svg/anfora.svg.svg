@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Anfora [2 color]</title>
+    <g id="Anfora-[2-color]" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Anfora" transform="translate(14.000000, 0.000000)" fill-rule="nonzero">
+            <polygon id="Path" fill="#FFFFFF" points="357.333051 87.7497714 446.673126 87.7497714 411.350483 305.85918"></polygon>
+            <polygon id="Path" fill="#FF5230" transform="translate(397.789708, 225.647066) rotate(10.000000) translate(-397.789708, -225.647066) " points="418.18423 281.682979 418.18423 100.312026 352.171 100.312026 338.62765 63.1011275 456.951766 63.1011275 456.951766 388.193005"></polygon>
+            <g id="Group" transform="translate(219.062276, 256.000000) rotate(-10.000000) translate(-219.062276, -256.000000) translate(36.789594, 28.190379)">
+                <rect id="Rectangle" fill="#FF5230" x="-1.0002798e-14" y="1.51302827e-14" width="364.545363" height="455.619242"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="37.9740747" y="36.4492365" width="288.598728" height="288.559358"></rect>
+            </g>
+            <path d="M89.8199956,93.4242916 L208.367955,93.4242916 C217.470258,93.4242916 224.849133,100.80215 224.849133,109.903199 C224.849133,119.004248 217.470258,126.382106 208.367955,126.382106 L174.880691,126.382106 L174.880691,169.157581 C215.482038,192.70876 270.967984,236.93209 270.967984,287.604101 C270.967984,301.976765 268.465429,318.725282 263.944329,336.421363 L89.8199956,336.421363 L89.8199956,93.4242916 Z" id="Path" fill="#FF5230" transform="translate(180.393990, 214.922827) rotate(-10.000000) translate(-180.393990, -214.922827) "></path>
+        </g>
+    </g>
+</svg>
