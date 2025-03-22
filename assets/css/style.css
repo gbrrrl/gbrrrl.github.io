@@ -12,7 +12,7 @@ body {
 
 .header {
     display: block;
-    max-width: 60%;
+    max-width: 70%;
     padding: 10px;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -37,7 +37,7 @@ body {
 
 .navbar {
     display: block;
-    max-width: 60%;
+    max-width: 70%;
 	color: #000000;
     background-color: #000000;
     padding: 10px;
@@ -76,7 +76,8 @@ body {
 .main {   
     font-family: 'Crimson Text', serif;
     display: block;
-    max-width: 60%;
+    max-width: 70%;
+	height: 100%;
     background-color: #000000;
     padding: 10px;
     padding-top: 40px;
@@ -94,7 +95,7 @@ body {
 
 .footer {
     display: block;
-    max-width: 60%;
+    max-width: 70%;
 	color: #000000;
     padding: 10px;
     padding-top: 10px;
