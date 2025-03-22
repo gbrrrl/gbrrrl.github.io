@@ -1,9 +1,9 @@
 html, body {
-  height: 100%;
+  max-height: 100%;
 }
 
 body {
-    background-image: url("https://gbrrrl.com/assets/theme/hypno_bg.gif");
+    background-image: url("");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100%;
