@@ -17,7 +17,7 @@ body {
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
-    background: #000000;
+    background-color: #000000;
     color: #000000;
     border: 0px solid black;
     margin: auto;
@@ -100,7 +100,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    background: #000000;
+    background-color: #000000;
     border: 0px solid black;
     word-spacing: 10px;
     margin: auto;
