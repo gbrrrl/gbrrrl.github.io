@@ -18,7 +18,7 @@ body {
     padding-bottom: 40px;
     text-align: center;
     background: #000000;
-    color: #ffffff;
+    color: #000000;
     border: 0px solid black;
     margin: auto;
 }
@@ -38,7 +38,8 @@ body {
 .navbar {
     display: block;
     max-width: 60%;
-    background-color: #818589;
+	color: #000000;
+    background-color: #000000;
     padding: 10px;
     padding-bottom: 40px;
     border: 1px solid black;
@@ -50,7 +51,7 @@ body {
     font-family: Oswald, monospace;
     float: left;
     display: inline-block;
-    color: #ffffff;
+    color: #000000;
     text-align: center;
     padding: 4px 10px;
     text-decoration: none;
@@ -94,11 +95,12 @@ body {
 .footer {
     display: block;
     max-width: 60%;
+	color: #000000;
     padding: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    background: #2c2c2c;
+    background: #000000;
     border: 0px solid black;
     word-spacing: 10px;
     margin: auto;
