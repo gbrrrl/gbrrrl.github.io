@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 body {
     background-image: url("https://gbrrrl.com/assets/theme/hypno_bg.gif");
     background-position: center top;
