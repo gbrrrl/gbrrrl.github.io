@@ -11,7 +11,7 @@ body {
     animation: gradient-animation 2s ease infinite;
     background-color: #000000;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 0px;
     padding: 0;
 }
 @keyframes gradient-animation {
