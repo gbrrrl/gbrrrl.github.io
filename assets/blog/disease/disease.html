@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+<!-- Theme by @DISEASE -->
+
+<title>
+DISEASE
+{block:SearchPage} ({lang:Search results for SearchQuery})
+{/block:SearchPage}
+{block:PermalinkPage}
+{block:PostSummary} — {PostSummary}{/block:PostSummary}
+{/block:PermalinkPage}
+</title>
+{block:Description}
+<meta name="description" content="{MetaDescription}">
+{/block:Description}
+ 
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+<link rel="shortcut icon" href="{Favicon}">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB Garamond"|"Anonymous Pro"|"Playfair Display">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://gbrrrl.com/assets/blog/disease/disease.css">
+</head>
+
+
+<body id="{block:IndexPage}I{/block:IndexPage}{block:PermalinkPage}P{/block:PermalinkPage}">
+
+<section id="posts-container">
+<div id="posts">
+<div id="post-sizer"></div>
+<div id="gutter-sizer"></div>
+{block:Posts}
+    <div class="post" id="{PostID}">
+    <div class="post-content">
+
+    {block:Text}
+        <div class="text">
+        {block:Title}<h2>{Title}</h2>{/block:Title}
+        {Body}
+        </div>
+    {/block:Text}
+
+    {block:Photo}
+        <div class="photo">
+        {block:IndexPage}
+        <img class="lazyload" src="{PhotoURL-HighRes}" alt="{PhotoAlt}">
+        {block:Caption}<h4>{Caption}</h4>{/block:Caption}
+        {/block:IndexPage}
+        {block:PermalinkPage}
+        {LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">{LinkCloseTag}
+        {/block:PermalinkPage}
+        </div>
+        {/block:Photo}
+
+    {block:Photoset}
+    <div id="photoset-grid lightbox" data-layout="{PhotosetLayout}" data-id="photoset{PostID}">{block:IndexPage}{Photoset-700}{block:Caption}<h4>{Caption}</h4>{/block:Caption}{/block:IndexPage}{block:PermalinkPage}{Photoset-700}{/block:PermalinkPage}
+    </div>
+    {/block:Photoset}
+
+
+    {block:Quote}
+        <div class="text quote"><h3>{Quote}</h3>
+        <div class="source">—{Source}</div>
+        </div>
+    {/block:Quote}
+
+    {block:Link}
+        <div class="text"><h2><a class="link" href="{URL}">{Name}</a></h2>
+        <div class="source">{block:Description}{Description}{/block:Description}</div>
+        </div>
+    {/block:Link}
+
+    {block:Chat}
+        <div class="text chat">
+        {block:Title}<h2>{Title}</h2>{/block:Title}
+        {block:Lines}<li class="{Alt}">{block:Label}<b>{Label}</b>{/block:Label} {Line}</li>{/block:Lines}
+        </div>
+        {/block:Chat}
+
+    {block:Audio}
+        <div class="media">
+        {block:IndexPage}
+        {block:AudioEmbed}{AudioEmbed}{/block:AudioEmbed}
+        {block:ExternalAudio}{ExternalAudioURL}{/block:ExternalAudio}
+        {block:Caption}<h4>{Caption}</h4>{/block:Caption}
+        {/block:IndexPage}
+        {block:PermalinkPage}
+        {AudioEmbed-640}
+        {/block:PermalinkPage}
+        </div>
+    {/block:Audio}
+
+    {block:Video}
+        <div class="media">
+        {block:IndexPage}
+        {VideoEmbed-400}
+        {block:Caption}<h4>{Caption}</h4>{/block:Caption}
+        {/block:IndexPage}
+        {block:PermalinkPage}
+        {VideoEmbed-700}
+        {/block:PermalinkPage}
+    </div>
+    {/block:Video}
+
+    {block:Answer}
+        <div class="text">
+            <span style="text-transform:uppercase"><h3>@{Asker} asked:</h3></span>
+            <h3>{Question}</h3>
+            <div class="source">{Answer}</div>
+        </div>
+    {/block:Answer}
+
+
+{block:IndexPage}
+    <ul class="like_and_reblog_buttons">
+    <li>{ReblogButton color="white"}</li>
+    <li>{LikeButton color="white"}</li>
+    <li><a href="{Permalink}" target="_blank"><i class="fa-solid fa-paperclip"></i></a></li>
+    </ul>
+{/block:IndexPage}
+</div>
+</div>
+
+
+{block:PermalinkPage}
+    {block:Date}
+    <div class="p-b">
+    <section class="o">
+        {block:Caption}<section class="captions"><h4>{Caption}</h4></section>{/block:Caption}
+        {block:ContentSource}<p><a href="{SourceURL}">{SourceTitle}</a></p>{/block:ContentSource}</section>
+        <p style="text-align:center">{Month} {DayOfMonthWithZero}, {Year} &nbsp;&nbsp;|&nbsp;&nbsp; {12HourWithZero}:{Minutes} {AmPm}</p>
+        {block:HasTags}<section class="o">{block:Tags}<span><a href="{TagURL}">#{Tag}</a></span>{/block:Tags}</section>{/block:HasTags}
+        <p style="text-align:right">{NoteCountWithLabel}</p>
+        {block:PostNotes}<section>{PostNotes}</section>{/block:PostNotes}
+    </div>{/block:Date}
+    {/block:PermalinkPage}
+    
+{/block:Posts}
+
+<div class="nav-bar-1">
+<a href="https://disease.tumblr.com"><h1>AB ÆTERNO 丰</h1>
+</div>
+
+<div class="nav-bar-2">
+&nbsp;<a href="https://disease.tumblr.com/archive">ARCHIVE</a> / 
+<a href="https://disease.tumblr.com/ask">ASK</a> / 
+<a href="https://bio.link/gbrrrl" target="_blank">BIO</a> / 
+<a href="https://disease.tumblr.com/tags">#TAGS</a> / 
+<a href="https://disease.tumblr.com/tagged/u">UPLOADS<small></small></a><br/>
+&nbsp;<a href="https://disease.tumblr.com/tagged/audio">AUDIO <font color="#7c5cff"><i class="fa-solid fa-music"></i></a></font> | 
+<a href="https://disease.tumblr.com/tagged/link">LINKS <font color="#02cf35"><i class="fa-solid fa-link"></i></font></a> | 
+<a href="https://disease.tumblr.com/tagged/text">TEXT <font color="#999999"><i class="fa-regular fa-file-lines"></i></font></a> | 
+<a href="https://disease.tumblr.com/tagged/video">VIDEO <font color="#ff63cd"><i class="fa-solid fa-photo-film"></i></font></a>
+</div>
+
+<!--
+<div class="nav-bar-3">
+&nbsp;<a href="https://buymeacoffee.com/gbrrrl" target="_blank"><img src="https://i.imgur.com/zfrx3xC.png" width="20px" alt="Buy Me A Coffee"></a> &nbsp; 
+<a href="https://cor-humanum.tumblr.com" target="_blank"><img src="https://64.media.tumblr.com/9850c56967ec695f0d94994ddaae7ea7/3cf231a9d3c83b57-22/s500x750/458a2111bbf3b8f46ccab4a7879c7045cb986475.png" width="22px" alt="@COR-HUMANUM"></a> 
+<a href="https://www.tumblr.com/audio-archives" target="_blank"><img src="https://64.media.tumblr.com/d8b8bd7152d1c53d0f038a37f8992157/820cd100be41b044-39/s96x96u_c1/bfb89e6eef6c5dbbdef5ee9e6d61fed610306f3b.png" width="22px" alt="@AUDIO-ARCHIVES"></a> 
+<a href="https://defect.blog/rss" target="_blank"><img src="https://64.media.tumblr.com/e2a9c592c7344fc2b64b245dd587f58a/99371b8c02356f96-76/s540x810/b4fa4e79b4bb189762bcbcedfd3aabf38d330c97.png" width="22px" alt="RSS"></a> 
+<a href="https://disease.tumblr.com/submit" target="_blank"><img src="https://64.media.tumblr.com/089fa55291d7739afa41bd13cb6e925c/5f0263851372c382-f1/s500x750/bdfa20040c7d2f86e56a3b0a56d29992aa5811f7.png" width="22px" alt="Disclaimer"></a>&nbsp;&nbsp;
+<a href="https://bookwyrm.social/user/gbrrrl" target="_blank"><img src="https://64.media.tumblr.com/25321e34bb861b5eb4ed2259e7295b9e/ec23ef58bffb6b01-c4/s400x600/ad4aa8880b7eefc4c187386ce1635e1646ab1c2f.png" width="22px" alt="Bookwyrm"></a> 
+<a href="https://codeberg.org/gbrrrl" target="_blank"><img src="https://64.media.tumblr.com/cd5539071acc2d39117fc1eee410a4e1/ec23ef58bffb6b01-00/s400x600/b136a7cef72dcad8b2e7c74646fe8223a7ddf922.png" width="22px" alt="Codeberg"></a> 
+<a href="https://diasp.org/people/e9da92c0841b013d551d28a1592b385a" target="_blank"><img src="https://wiki.diasporafoundation.org/images/2/2e/Star.png" width="22px" alt="diaspora*"></a> 
+<a href="https://friendica.world/profile/gbrrrl" target="_blank"><img src="https://64.media.tumblr.com/d055356ba4b5acd3f293f0247c23d952/ec23ef58bffb6b01-2f/s400x600/a0d15eec4cf5ef16aee8d0bc5c651226e7800365.png" width="22px" alt="Friendica"></a> 
+<a href="https://funk.gravitywell.xyz/@gbrrrl" target="_blank"><img src="https://64.media.tumblr.com/aa0a1c2398e4e7c353285058f4c78ef2/ec23ef58bffb6b01-83/s400x600/776a66f253c23f49388ce38ae7ac1e0aab88098d.png" width="22px" alt="Funkwhale"></a> 
+<a href="https://hub.hubzilla.de/channel/gbrrrl" target="_blank"><img src="https://64.media.tumblr.com/698b73e8b7dd1507e1f82e17e021a2a3/ec23ef58bffb6b01-fa/s400x600/ea3d77a1aff5ac8563ace99aa0526671c36d775f.png" width="22px" alt="Hubzilla"></a> 
+<a href="https://lemmings.world/u/gbrrrl" target="_blank"><img src="https://64.media.tumblr.com/16bbf2aa2999566ce3f2551c87c4268e/ec23ef58bffb6b01-86/s400x600/94ef3c53003fe76db9f73b83b5e9caf118ad9641.png" width="22px" alt="Lemmy"></a> 
+<a href="https://disease.tumblr.com/archive" target="_blank"><img src="https://64.media.tumblr.com/aa89b0dd725d73bb91579ce16529b12b/95ec0b96685de763-7c/s540x810/821cd65120c26a1cf76450397d8302066845f089.png" width="22px" alt="Mastodon"></a> 
+<a href="http://gbrrrl@makertube.net/" target="_blank"><img src="https://64.media.tumblr.com/99b5ab3f022c66f0666f3467966204c7/ec23ef58bffb6b01-20/s540x810/1ed3b2ec1c5acb6cc9968696e5a87bcc8f75af22.png" width="18px" alt="PeerTube"></a> 
+<a href="https://pixelfed.social/gbrrrl" target="_blank"><img src="https://64.media.tumblr.com/02ef60aa15b93575ff4548a061b3ebec/ec23ef58bffb6b01-f8/s540x810/122e6de570b49fa1b08702d3c4bdc57acc370b42.png" width="22px" alt="Pixelfed"></a> 
+<a href="https://stereophonic.space/users/gbrrrl" target="_blank"><img src="https://64.media.tumblr.com/ac5d0e8441a45ae2b9ed9dd99799ae9d/ec23ef58bffb6b01-1d/s540x810/1208a07c5e644c8c376a8e062a8a860be0e7d283.png" width="22px" alt="Pleroma"></a> 
+<a href="https://socialhome.network/u/gbrrrl" target="_blank"><img src="https://64.media.tumblr.com/38b1bfa91f69d7bcb50a7993b8d36e12/ec23ef58bffb6b01-4f/s540x810/6950554d29fda48afe14884434a2b16a385eee2d.png" width="22px" alt="Socialhome"></a>&nbsp;
+</div>
+-->
+
+<div class="nav-bar-4">
+&nbsp;<a href="https://lostblognetwork.com/main" target="_blank"><img src="https://static.tumblr.com/yk4wpbt/PMUsh8roz/lostblognetwork.png" width="120px" alt="LOST BLOG NETWORK"></a>
+</div>
+
+<p id="footer">
+{block:PreviousPage}
+<a href="{PreviousPage}" class="pagination__previous">« PREVIOUS</a> 
+{/block:PreviousPage}
+{block:NextPage}
+<a href="{NextPage}" class="pagination__next">NEXT »</a> 
+{/block:NextPage} 
+    
+    <!-- {block:NoRebloggedFrom}
+{block:RebloggedFrom}{ReblogParentName}{/block:RebloggedFrom}
+{/block:NoRebloggedFrom} -->
+
+{block:ContentSource}<!-- {SourceURL}
+{block:SourceLogo}<img src="{BlackLogoURL}"width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />{/block:SourceLogo}
+{block:NoSourceLogo}{SourceLink}{/block:NoSourceLogo} -->
+{/block:ContentSource}
+
+</p>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js"></script>
+<script src="https://gbrrrl.com/assets/blog/disease/disease.js"></script>
+
+</body>
+</html>
