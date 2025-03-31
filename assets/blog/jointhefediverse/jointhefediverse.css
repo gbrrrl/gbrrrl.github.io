@@ -77,7 +77,7 @@ blockquote {
     display: block;
     margin: auto;
     padding: 10px;
-    max-width: 30%;
+    max-width: 40%;
     text-align: center;
     border: 1px solid gray;
     }
@@ -92,7 +92,7 @@ blockquote {
     text-align: center;
     padding: 10px;
     margin: auto;
-    max-width: 30%;
+    max-width: 40%;
     border: 1px solid gray;
     }
 .entry {
@@ -100,7 +100,7 @@ blockquote {
     padding: 10px;
     margin: auto;
     border: 1px solid gray;
-    max-width: 50%;
+    max-width: 40%;
     }
 .entry img {
     max-width: 100%;
