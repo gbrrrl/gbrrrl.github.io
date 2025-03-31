@@ -253,43 +253,7 @@ li {
     color: #888888;
     text-decoration: none;
 }
-.nav-bar-2 {
-    font-family: "Anonymous Pro", monospace;
-    font-weight: normal;
-    font-size: 14px;
-    height: 40px;
-    width: 350px;
-    color: #ffffff;
-    background-color: #000000;
-    padding: 0px 0px;
-    border: 0px solid #ffffff;
-    text-align: left;
-    position: relative;
-    left: 10px;
-    top: 12px;
-    display: inline-block;
-    box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.2);
-    z-index: 2;
-}
-.nav-bar-2 a, img {
-    font-family: "Anonymous Pro", monospace;
-    font-weight: normal;
-    color: #ffffff;
-    padding-top: 2px;
-    display: inline;
-}
-.nav-bar-2 a {
-    font-size: 14px;
-}
-.nav-bar-2 img {
-    word-spacing: .2px;
-}
-.nav-bar-2 a:hover {
-    font-family: "Anonymous Pro", monospace;
-    color: #888888;
-    text-decoration: none;
-}
-.nav-bar-3 {
+.nav-lbn {
     font-family: "Anonymous Pro", monospace;
     font-weight: normal;
     font-size: 14px;
@@ -307,20 +271,20 @@ li {
     box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.1);
     z-index: 1;
 }
-.nav-bar-3 a, img {
+.nav-lbn a, img {
     font-family: "Anonymous Pro", monospace;
     font-weight: normal;
     color: #ffffff;
     padding-top: 2px;
     display: inline;
 }
-.nav-bar-3 a {
+.nav-lbn a {
     font-size: 14px;
 }
-.nav-bar-3 img {
+.nav-lbn img {
     word-spacing: .2px;
 }
-.nav-bar-3 a:hover {
+.nav-lbn a:hover {
     font-family: "Anonymous Pro", monospace;
     color: #888888;
     text-decoration: none;
