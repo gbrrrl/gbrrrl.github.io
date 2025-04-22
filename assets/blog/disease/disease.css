@@ -256,20 +256,20 @@ li {
 .navbar-title {
   font-family: "Anonymous Pro", monospace;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 40px;
   height: 50px;
-  min-width: 100%;
+  width: 500px;
   color: #ffffff;
   background-color: #000000;
   padding: 0px 0px;
   border: 1px solid #ffffff;
   text-align: left;
   position: fixed;
-  left: 8px;
+  left: 50%;
   top: 4px;
   display: inline-block;
   box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 2;
 }
 .navbar-title a, img {
   font-family: "Anonymous Pro", monospace;
