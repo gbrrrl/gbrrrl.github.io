@@ -289,10 +289,10 @@ li {
   height: 120px;
   width: 140px;
   background-color: transparent;
-  padding: 0px 0px;
+  padding: 4px 4px;
   border: 0px solid #ffffff;
   position: fixed;
-  left: 2px;
+  left: 4px;
   bottom: 2px;
   display: inline-block;
   box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.1);
