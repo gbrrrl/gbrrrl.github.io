@@ -226,7 +226,7 @@ li {
   min-width: 100%;
   color: #ffffff;
   background-color: #000000;
-  padding: 2px 0px;
+  padding-top: 4px;
   border: 1px solid #ffffff;
   text-align: left;
   position: fixed;
