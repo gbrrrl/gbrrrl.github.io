@@ -253,6 +253,42 @@ li {
   color: #888888;
   text-decoration: none;
 }
+.navbar-title {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: normal;
+  font-size: 14px;
+  height: 50px;
+  min-width: 100%;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 0px 0px;
+  border: 1px solid #ffffff;
+  text-align: left;
+  position: fixed;
+  left: 8px;
+  top: 4px;
+  display: inline-block;
+  box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.navbar-title a, img {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: normal;
+  color: #ffffff;
+  padding-top: 2px;
+  display: inline;
+}
+.navbar-title a {
+  font-size: 14px;
+}
+.navbar-title img {
+  word-spacing: .2px;
+}
+.navbar-title a:hover {
+  font-family: "Anonymous Pro", monospace;
+  color: #888888;
+  text-decoration: none;
+}
 .nav-lbn {
   font-family: "Anonymous Pro", monospace;
   font-weight: normal;
