@@ -261,8 +261,8 @@ li {
   width: 500px;
   color: #ffffff;
   background-color: #000000;
-  padding: 0px 0px;
-  border: 1px solid #ffffff;
+  padding: 2px 2px;
+  border: 0px solid #ffffff;
   text-align: left;
   position: fixed;
   left: 50%;
@@ -279,7 +279,7 @@ li {
   display: inline;
 }
 .navbar-title a {
-  font-size: 14px;
+  font-size: 40px;
 }
 .navbar-title img {
   word-spacing: .2px;
