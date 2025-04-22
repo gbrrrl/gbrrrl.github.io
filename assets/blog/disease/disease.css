@@ -263,7 +263,7 @@ li {
   color: #ff0000;
   background-color: transparent;
   padding: 2px 2px;
-  border: 1px solid #ffffff;
+  border: 0px solid #ffffff;
   text-align: center;
   position: fixed;
   left: 40%;
