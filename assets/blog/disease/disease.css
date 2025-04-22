@@ -86,6 +86,7 @@ li {
     box-sizing: border-box;
 }
 #posts-container {
+    margin-top: 40px;
     position: relative;
     right: 0;
 }
