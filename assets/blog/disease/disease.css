@@ -217,6 +217,78 @@ li {
 .like_and_reblog_buttons li:first-child {
     border-right: 0px solid #e8e8e8;
 }
+.navbar-main {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: normal;
+  font-size: 14px;
+  height: 50px;
+  min-width: 100%;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 0px 0px;
+  border: 1px solid #ffffff;
+  text-align: left;
+  position: fixed;
+  left: 8px;
+  top: 4px;
+  display: inline-block;
+  box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.navbar-main a, img {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: normal;
+  color: #ffffff;
+  padding-top: 2px;
+  display: inline;
+}
+.navbar-main a {
+  font-size: 14px;
+}
+.navbar-main img {
+  word-spacing: .2px;
+}
+.navbar-main a:hover {
+  font-family: "Anonymous Pro", monospace;
+  color: #888888;
+  text-decoration: none;
+}
+.nav-lbn {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: normal;
+  font-size: 14px;
+  height: 120px;
+  width: 140px;
+  color: #ffffff;
+  background-color: transparent;
+  padding: 0px 0px;
+  border: 0px solid #ffffff;
+  text-align: center;
+  position: fixed;
+  left: 2px;
+  bottom: 2px;
+  display: inline-block;
+  box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+.nav-lbn a, img {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: normal;
+  color: #ffffff;
+  padding-top: 2px;
+  display: inline;
+}
+.nav-lbn a {
+  font-size: 14px;
+}
+.nav-lbn img {
+  word-spacing: .2px;
+}
+.nav-lbn a:hover {
+  font-family: "Anonymous Pro", monospace;
+  color: #888888;
+  text-decoration: none;
+}
 #P .post {
     width: 60%;
 }
