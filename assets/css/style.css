@@ -14,6 +14,10 @@ body {
     color: #ffffff;
 }
 
+a {
+	color: #ffffff;
+}
+
 .header {
     display: block;
     max-width: 70%;
@@ -37,6 +41,7 @@ body {
     font-family: Orienta, serif;
     font-style: italic;
     font-size: 22px;
+	color: #ffffff;
 }
 
 .navbar {
