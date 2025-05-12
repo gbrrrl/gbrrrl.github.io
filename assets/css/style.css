@@ -36,16 +36,12 @@ a:hover {
 }
 
 .navbar a {
-	float: left;
+	float: center;
 	display: block;
 	color: #fff;
 	text-align: center;
 	padding: 14px 20px;
 	text-decoration: none;
-}
-
-.navbar a.right {
-	float: right;
 }
 
 .navbar a:hover {
@@ -58,31 +54,15 @@ a:hover {
 	color: #fff;
 }
 
-.row {  
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-}
-
-.side {
-	-ms-flex: 30%;
-	flex: 30%;
-	color: #fff;
-	background-color: #000;
-	padding: 20px;
-}
-
 .main {   
-	-ms-flex: 70%;
-	flex: 70%;
+	max-width: 100%;
 	color: #fff;
 	background-color: #000;
 	padding: 20px;
 }
 
 .footer {
-	padding: 10px;
+	padding: 0px;
 	text-align: center;
 	color: #fff;
 	background: #000;
