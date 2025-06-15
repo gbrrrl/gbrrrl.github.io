@@ -1,0 +1,22 @@
+body {
+	margin: 0px;
+}
+
+#bg {
+	background-color: #000;
+	position: fixed;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 0;
+}
+
+#bg img {
+	width: 100%;
+	height: 100%;
+}
