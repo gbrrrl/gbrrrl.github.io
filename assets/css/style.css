@@ -30,6 +30,7 @@ a:hover {
 .header img {
 	margin: auto;
 	float: center;
+	width: 300px;
 }
 
 .navbar {
