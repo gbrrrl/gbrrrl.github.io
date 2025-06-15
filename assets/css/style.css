@@ -4,6 +4,7 @@
 
 body {
 	font-family: Inconsolata, Courier, monospace;
+	font-size: 16px;
 	background-color: #000;
 	background-image: url("https://gbrrrl.com/assets/theme/glitch_vfx_bg_04.gif");
 	background-position: center;
@@ -15,23 +16,25 @@ body {
 
 a {
 	color: #999;
+	font-size: 16px;
 }
 
 a:hover {
 	color: #777;
+	font-size: 16px;
 }
 
 .header {
-	max-width: 80%;
 	padding: 10px;
 	text-align: center;
 	background: #000;
 	color: #fff;
-	margin: 0;
+	margin-top: 20%;
 }
 
 .header h1 {
 	font-size: 40px;
+	font-style: bold;
 }
 
 .header a {
@@ -48,13 +51,11 @@ a:hover {
 }
 
 .navbar {
-	max-width: 80%;
 	overflow: hidden;
 	background-color: #000;
 	position: sticky;
 	position: -webkit-sticky;
 	top: 0;
-	margin: 0;
 }
 
 .navbar a {
@@ -77,28 +78,24 @@ a:hover {
 }
 
 .main {   
-	max-width: 80%;
 	color: #fff;
 	background-color: #000;
 	padding: 10px;
 	border: 0px;
-	margin: 0;
 }
 
 .main img {   
 	max-width: 100%;
 	padding: 10px;
 	float: center;
-	margin: 0;
+	margin: auto;
 }
 
 .footer {
-	max-width: 80%;
 	padding: 0px;
 	text-align: center;
 	color: #fff;
 	background: #000;
-	margin: 0;
 }
 
 .footer a {
