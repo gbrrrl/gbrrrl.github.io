@@ -65,6 +65,14 @@ a:hover {
 	color: #fff;
 	background-color: #000;
 	padding: 20px;
+	border: 0px;
+}
+
+.main img {   
+	max-width: 100%;
+	padding: 20px;
+	float: center;
+	margin: auto;
 }
 
 .footer {
