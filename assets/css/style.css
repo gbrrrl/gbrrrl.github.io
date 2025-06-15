@@ -27,6 +27,11 @@ a:hover {
 	font-size: 40px;
 }
 
+.header img {
+	margin: auto;
+	float: center;
+}
+
 .navbar {
 	overflow: hidden;
 	background-color: #000;
