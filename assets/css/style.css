@@ -50,6 +50,22 @@ a:hover {
 	width: 160px;
 }
 
+h2 {
+	font-family: Inconsolata, Courier, monospace;
+	color: #999;
+	font-size: 22px;
+}
+
+h2 a {
+	color: #999;
+	font-size: 22px;
+}
+
+h2 a:hover {
+	color: #777;
+	font-size: 22px;
+}
+
 .navbar {
 	overflow: hidden;
 	background-color: #000;
