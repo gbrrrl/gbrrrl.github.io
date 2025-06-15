@@ -27,10 +27,16 @@ a:hover {
 	font-size: 40px;
 }
 
+.header a {
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
 .header img {
 	margin: auto;
 	float: center;
-	width: 300px;
+	width: 200px;
 }
 
 .navbar {
@@ -61,7 +67,7 @@ a:hover {
 }
 
 .main {   
-	max-width: 100%;
+	max-width: 60%;
 	color: #fff;
 	background-color: #000;
 	padding: 20px;
