@@ -5,6 +5,11 @@
 body {
 	font-family: Inconsolata, Courier, monospace;
 	background-color: #000;
+	background-image: url("https://gbrrrl.com/assets/theme/glitch_vfx_bg_04.gif");
+	background-position: center;
+	background-repeat: none;
+	background-size: 100%;
+	background-attachment: fixed;
 	margin: 0;
 }
 
@@ -31,6 +36,7 @@ a:hover {
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
+	font-style: bold;
 }
 
 .header img {
@@ -76,7 +82,7 @@ a:hover {
 
 .main img {   
 	max-width: 100%;
-	padding: 20px;
+	padding: 10px;
 	float: center;
 	margin: auto;
 }
