@@ -4,7 +4,7 @@
 
 body {
 	font-family: Inconsolata, Courier, monospace;
-	font-size: 16px;
+	font-size: 20px;
 	background-color: #000;
 	background-image: url("https://gbrrrl.com/assets/theme/glitch_vfx_bg_04.gif");
 	background-position: center;
@@ -16,12 +16,12 @@ body {
 
 a {
 	color: #999;
-	font-size: 16px;
+	font-size: 24px;
 }
 
 a:hover {
 	color: #777;
-	font-size: 16px;
+	font-size: 24px;
 }
 
 .header {
@@ -108,7 +108,7 @@ h2 a:hover {
 }
 
 .footer {
-	padding: 0px;
+	padding: 10px;
 	text-align: center;
 	color: #fff;
 	background: #000;
