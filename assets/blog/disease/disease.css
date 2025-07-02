@@ -1,0 +1,395 @@
+html {
+    position: relative;
+    width: 100%;
+}
+body {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 14px;
+    color: #ffffff;
+    background: linear-gradient(300deg,#111111,#222222,#333333,#444444,#555555,#666666,#777777,#888888,#999999);
+    background-size: 600% 600%;
+    animation: gradient-animation 2s ease infinite;
+    background-color: #000000;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding: 0;
+}
+@keyframes gradient-animation {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+a {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #848484;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+a:hover {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: underline;
+}
+blockquote {
+    border-left: 4px solid rgba(#ffffff,.1);
+    padding: 0 0 0 15px;
+    margin: 0;
+}
+h2, h3, h4, h5 {
+    color: #ffffff;
+    margin: 0 0 20px;
+    letter-spacing: 0px;
+}
+h1 {
+    color: #ff0000;
+    font-family: "Playfair Display", Georgia, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    line-height: 0px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+h1:hover {
+    text-decoration: line-through;
+}
+h4, h5 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 14px;
+}
+h2, h3 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 16px;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+iframe, figure {
+    max-width: 100%;
+    margin: auto;
+}
+figure img {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    height: auto !important;
+}
+ul, ol {
+    padding: 0;
+}
+li {
+    list-style-position: inside;
+}
+* {
+    box-sizing: border-box;
+}
+#posts-container {
+    margin-top: 60px;
+    position: relative;
+    right: 0;
+}
+#posts {
+    position: relative;
+    margin: auto;
+    margin-left: 10px;
+    padding: 10px 0;
+}
+#posts:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+#post-sizer, .post {
+    width: 32.4%;
+}
+#gutter-sizer {
+    width: 1%;
+}
+@media screen and (max-width: 600px) {
+  .post {
+    width: 100%;
+  }
+}
+.post {
+    position: relative;
+    background-color: #000000;
+    overflow: hidden;
+    margin-bottom: 1%;
+}
+.post-content {
+    font-size: 14px;
+    border: 2px inset rgba(255,255,255,.8);
+    width: 100%;
+    padding: 10px;
+    float: left;
+}
+.post-content p,
+.post-content blockquote {
+    margin: 0 0 20px;
+}
+.post-content .text h2 a.link {
+    display: block;
+    text-decoration: none;
+}
+.post-content .text h2 a.link:after {
+    content: "\2192";
+    margin: 0 0 0 20px;
+}
+.post-content p:last-child {
+    margin: 0 !important;
+}
+.post-content .media {
+    width: 100%;
+}
+.post-content .media iframe {
+    display: block;
+    width: 100%;
+}
+.post-content .photo {
+    position: relative;
+    overflow: hidden;
+}
+.post-content .photo img {
+    width: 100%;
+}
+.post-content .lightbox a {
+    outline: none;
+}
+.post-content .text {
+    position: relative;
+}
+.post-content .captions {
+    padding: 20px 0;
+}
+.post-content .text.chat li {
+    padding: 10px;
+    list-style: none;
+}
+.source {
+    padding: 20px 0 0;
+}
+.post p, .post blockquote {
+    margin: 0 0 20px;
+}
+.post-content .text .chat li.odd {
+    background: rgba(#ffffff,.1);
+}
+.post-content .text .source {
+    border-top: 1px solid rgba(#ffffff,.1);
+}
+.post-content .text.chat li {
+    font-size: 14px;
+    font-family: "Playfair Display", Georgia, serif;
+}
+.details {
+    background-color: #000000;
+    font-size: 14px;
+    text-align: right;
+    height: 20px;
+}
+.details a {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: right;
+}
+.like_and_reblog_buttons {
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    list-style: none;
+    }
+.like_and_reblog_buttons li {
+    float: left;
+    padding: 8px 8px;
+    height: 20px;
+    line-height: 20px;
+    }
+.like_and_reblog_buttons li a {
+    color: #ffffff;
+    font-family: Georgia, serif;
+    }
+.like_and_reblog_buttons li a:hover {
+    color: #999999;
+    text-decoration: none;
+    }
+.like_and_reblog_buttons li:first-child {
+    border-right: 0px solid #e8e8e8;
+}
+.navbar-main {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: normal;
+  font-size: 14px;
+  height: 50px;
+  min-width: 100%;
+  color: #ffffff;
+  background-color: #000000;
+  padding-top: 4px;
+  border: 1px solid #ffffff;
+  text-align: left;
+  position: fixed;
+  left: 8px;
+  top: 4px;
+  display: inline-block;
+  box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.navbar-main a, img {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: normal;
+  color: #ffffff;
+  padding-top: 2px;
+  display: inline;
+}
+.navbar-main a {
+  font-size: 14px;
+}
+.navbar-main img {
+  word-spacing: .2px;
+}
+.navbar-main a:hover {
+  font-family: "Anonymous Pro", monospace;
+  color: #888888;
+  text-decoration: none;
+}
+.navbar-title {
+  font-family: "Playfair Display", Georgia, sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  height: 50px;
+  width: 350px;
+  color: #ff0000;
+  background-color: transparent;
+  padding: 2px 2px;
+  border: 0px solid #ffffff;
+  text-align: center;
+  position: fixed;
+  left: 40%;
+  top: 4px;
+  display: inline-block;
+  box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+.navbar-title a {
+  font-family: "Playfair Display", Georgia, sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  color: #ff0000;
+  padding-top: 2px;
+  display: inline;
+}
+.navbar-title a:hover {
+  font-family: "Playfair Display", Georgia, sans-serif;
+  color: #ff0000;
+  text-decoration: line-through;
+}
+.nav-lbn {
+  height: 120px;
+  width: 140px;
+  background-color: transparent;
+  padding: 4px 4px;
+  border: 0px solid #ffffff;
+  position: fixed;
+  left: 4px;
+  bottom: 2px;
+  display: inline-block;
+  box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+.nav-lbn a, img {
+  padding-top: 0px;
+  display: inline;
+}
+#P .post {
+    width: 60%;
+}
+#P .post-content {
+    float: left;
+    width: 100% !important;
+}
+#P .p-b {
+    background-color: #000000;
+    border: 2px inset rgba(255,255,255,.8);
+    padding: 10px;
+    float: right;
+    width: 39% !important;
+    height: auto;
+}
+#P .post-content, #P .p-b {
+    margin: 0 !important;
+}
+#P .post-content .text, #P .post-content .media, #P .post-content .photo.photoset {
+    bottom: 0 !important;
+}
+#P .p-b section ol.notes {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#P .p-b section ol.notes:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+#P .p-b section ol.notes li.note {
+    float: left;
+    overflow: hidden;
+    height: 18px;
+    width: 18px;
+    margin: 4px 8px 4px 0;
+    opacity: 0.5;
+}
+#P .p-b section ol.notes li.note:hover {
+    opacity: 1;
+}
+#P .p-b section ol.notes li.note img.avatar {
+    height: 100%;
+    width: 100%;
+    vertical-align: -4px;
+}
+#P .p-b section ol.notes li.more_notes_link_container {
+    width: 100%;
+    height: 14px;
+    margin: 20px 0 0;
+    text-align: left !important;
+    text-transform: uppercase;
+}
+#P .p-b section ol.notes li.more_notes_link_container a {
+    text-decoration: none;
+}
+#P .p-b section {
+    margin: 0;
+    padding: 20px 0;
+}
+#P .p-b section.o {
+    padding: 0 !important;
+    border: 0 !important;
+}
+#P .p-b section, #P .p-b section.o span {
+    border-top: 1px solid rgba(#ffffff,.1);
+}
+#P .p-b section.o span {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    padding: 20px 0;
+}
+#P .p-b section.o span a {
+    font-size: 20px;
+    font-family: "Playfair Display", Georgia, serif;
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+#P .p-b section.o span a:hover {
+  opacity: 1;
+}
+#P .p-b section ol.notes li.more_notes_link_container, #P .p-b section ol.notes li.more_notes_link_container a {
+    font-size: 14px; 
+    font-family: "Playfair Display", Georgia, serif;
+    color: #ffffff;
+}
+#footer {
+    visibility: hidden !important;
+}

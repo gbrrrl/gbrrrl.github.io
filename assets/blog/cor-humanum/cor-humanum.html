@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+<!-- Original Theme by @DISEASE -->
+
+<title>
+    {Title}
+    {block:SearchPage} ({lang:Search results for SearchQuery})
+    {/block:SearchPage}
+    {block:PermalinkPage}
+    {block:PostSummary} — {PostSummary}{/block:PostSummary}
+    {/block:PermalinkPage}
+</title>
+{block:Description}
+    <meta name="description" content="{MetaDescription}">
+{/block:Description}
+
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="stylesheet" href="https://gbrrrl.com/assets/blog/cor-humanum/cor-humanum.css">
+</head>
+
+<body>
+
+<div class="lbn"><a href="https://lostblognetwork.com/main"><img
+src="https://static.tumblr.com/5v6htqo/jimlkakhd/badge2_white.jpg" width="56px" target="_blank"
+alt="lost blog network"></a></div>
+
+<div class="header">
+    <header>
+    <h1><a href="/">{Title}</a></h1>
+    {block:Description}{Description}{/block:Description}
+    </header>
+</div>
+
+<section id="posts-container">
+<div id="posts">
+{block:Posts}
+
+<article id="{PostID}" class="entry">
+
+{block:Text}
+    <div class="text">
+    {block:Title}<h2>{Title}</h2>{/block:Title}
+    {Body}
+    </div>
+{/block:Text}
+
+{block:Answer}
+    <div class="text"><span style="text-transform:uppercase">
+    <h2>@{Asker} asked:</h2>
+    </span>
+    {Question}
+    <div class="source">
+    {block:Answerer}{Answer}{/block:Answerer}
+    </div>
+    </div>
+{/block:Answer}
+
+{block:Photo}
+    <div class="photo">
+    <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" width="100%">
+    {block:Caption}<h4>{Caption}</h4>{/block:Caption}
+    </div>
+{/block:Photo}
+
+{block:Photoset}
+    <div class="photo photoset">
+    {Photoset-700}{block:Caption}<h4>{Caption}</h4>{/block:Caption}
+    </div>
+{/block:Photoset}
+
+{block:Quote}
+    <div class="text quote">
+    <h3>"{Quote}"</h3>
+    <div class="source">{block:Source}<b>—{Source}</b>{/block:Source}
+    </div>
+    </div>
+{/block:Quote}
+
+{block:Link}
+    <div class="text">
+    <h2><a class="link" href="{URL}">{Name}</a></h2>
+    <div class="source">
+    {block:Description}{Description}{/block:Description}
+    </div>
+{/block:Link}
+
+{block:Chat}
+    <div class="text chat">
+    {block:Title}<h2>{Title}</h2>{/block:Title}
+    {block:Lines}<li class="{Alt}">{block:Label}<b>{Label}</b>{/block:Label} {Line}</li>
+    {/block:Lines}
+    </div>
+{/block:Chat}
+
+{block:Video}
+    <div class="media">
+    {VideoEmbed-700}
+    {block:Caption}<h4>{Caption}</h4>{/block:Caption}
+    </div>
+{/block:Video}
+
+{block:Audio}
+    <div class="media">
+    {block:AudioEmbed}{AudioEmbed}{/block:AudioEmbed}
+    {block:AudioPlayer}{AudioPlayer}{/block:AudioPlayer}
+    {block:Caption}<h4>{Caption}</h4>{/block:Caption}
+    </div>
+{/block:Audio}
+
+{block:IndexPage}
+    <ul class="like_and_reblog_buttons">
+    <li style="font-size:22px;"><a href="{Permalink}">♾️</a></li>
+    <li>{ReblogButton}</li>
+    <li>{LikeButton}</li>
+    {block:PinnedPostLabel}<li style="color:red;font-size:16px;">
+    <strong>[<em>{PinnedPostLabel}</em>]</strong>
+    </li>{/block:PinnedPostLabel}
+    </ul>
+    {/block:IndexPage}
+</article>
+
+{block:PermalinkPage}
+    <div class="permalink">
+    {block:Date}{Month}&nbsp;{DayOfMonthWithZero},&nbsp;{Year}&nbsp; /
+&nbsp;{12HourWithZero}:{Minutes}&nbsp;{CapitalAmPm}{/block:Date}<br /><br />
+
+    {block:HasTags}
+    {block:Tags}<a href="{TagURL}">#{Tag}</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    {/block:Tags}
+    {/block:HasTags}<br />
+
+    {block:ContentSource}
+    <a href="{SourceURL}">{lang:Source}: {SourceTitle}</a>{/block:ContentSource}
+</div>
+
+    {PostNotes}
+{/block:PermalinkPage}
+
+{/block:Posts}
+</div>
+</section>
+
+<div class="footer">
+    {block:PreviousPage}
+    <a href="{PreviousPage}">&larr; Previous</a>
+    {/block:PreviousPage}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{block:NextPage}
+    <a href="{NextPage}">Next &rarr;</a>
+    {/block:NextPage}
+</div>
+
+<!-- {block:NoRebloggedFrom}
+{block:RebloggedFrom}{ReblogParentName}{/block:RebloggedFrom}
+{/block:NoRebloggedFrom} -->
+
+{block:ContentSource}<!-- {SourceURL}
+{block:SourceLogo}<img src="{BlackLogoURL}"width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />{/block:SourceLogo}
+{block:NoSourceLogo}{SourceLink}{/block:NoSourceLogo} -->
+{/block:ContentSource}
+
+</body>
+</html>

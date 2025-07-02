@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+<!-- Theme by @DISEASE -->
+
+<title>
+DISEASE
+{block:SearchPage} ({lang:Search results for SearchQuery})
+{/block:SearchPage}
+{block:PermalinkPage}
+{block:PostSummary} — {PostSummary}{/block:PostSummary}
+{/block:PermalinkPage}
+</title>
+{block:Description}
+<meta name="description" content="{MetaDescription}">
+{/block:Description}
+ 
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+<link rel="shortcut icon" href="{Favicon}">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family="EB Garamond"|"Anonymous Pro"|"Playfair Display">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://gbrrrl.com/assets/blog/disease/disease.css">
+</head>
+
+
+<body id="{block:IndexPage}I{/block:IndexPage}{block:PermalinkPage}P{/block:PermalinkPage}">
+
+<section id="posts-container">
+
+<div class="navbar-main">
+&nbsp;<a href="https://disease.tumblr.com/archive">ARCHIVE</a> / 
+<a href="https://disease.tumblr.com/ask">ASK</a> / 
+<a href="/" target="_blank">BIO</a> / 
+<a href="https://disease.tumblr.com/tags">#TAGS</a> / 
+<a href="https://disease.tumblr.com/tagged/u">UPLOADS<small></small></a><br/>
+&nbsp;<a href="https://disease.tumblr.com/tagged/audio">AUDIO <font color="#7c5cff"><i class="fa-solid fa-music"></i></a></font> | 
+<a href="https://disease.tumblr.com/tagged/link">LINKS <font color="#02cf35"><i class="fa-solid fa-link"></i></font></a> | 
+<a href="https://disease.tumblr.com/tagged/text">TEXT <font color="#999999"><i class="fa-regular fa-file-lines"></i></font></a> | 
+<a href="https://disease.tumblr.com/tagged/video">VIDEO <font color="#ff63cd"><i class="fa-solid fa-photo-film"></i></font></a>
+</div>
+
+<div class="navbar-title">
+<h1><a href="/">AB ÆTERNO 丰</a></h1>
+</div>
+
+<div class="nav-lbn">
+<a href="https://lostblognetwork.com/main" target="_blank"><img src="https://static.tumblr.com/5v6htqo/4Bilkakib/badge2_black.jpg" alt="The Lost Blog Network" height="100px"></a>
+</div>
+
+<div id="posts">
+<div id="post-sizer"></div>
+<div id="gutter-sizer"></div>
+{block:Posts}
+    <div class="post" id="{PostID}">
+    <div class="post-content">
+
+    {block:Text}
+        <div class="text">
+        {block:Title}<h2>{Title}</h2>{/block:Title}
+        {Body}
+        </div>
+    {/block:Text}
+
+    {block:Photo}
+        <div class="photo">
+        {block:IndexPage}
+        <img class="lazyload" src="{PhotoURL-HighRes}" alt="{PhotoAlt}">
+        {block:Caption}<h4>{Caption}</h4>{/block:Caption}
+        {/block:IndexPage}
+        {block:PermalinkPage}
+        {LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">{LinkCloseTag}
+        {/block:PermalinkPage}
+        </div>
+        {/block:Photo}
+
+    {block:Photoset}
+    <div id="photoset-grid lightbox" data-layout="{PhotosetLayout}" data-id="photoset{PostID}">{block:IndexPage}{Photoset-700}{block:Caption}<h4>{Caption}</h4>{/block:Caption}{/block:IndexPage}{block:PermalinkPage}{Photoset-700}{/block:PermalinkPage}
+    </div>
+    {/block:Photoset}
+
+
+    {block:Quote}
+        <div class="text quote"><h3>{Quote}</h3>
+        <div class="source">—{Source}</div>
+        </div>
+    {/block:Quote}
+
+    {block:Link}
+        <div class="text"><h2><a class="link" href="{URL}">{Name}</a></h2>
+        <div class="source">{block:Description}{Description}{/block:Description}</div>
+        </div>
+    {/block:Link}
+
+    {block:Chat}
+        <div class="text chat">
+        {block:Title}<h2>{Title}</h2>{/block:Title}
+        {block:Lines}<li class="{Alt}">{block:Label}<b>{Label}</b>{/block:Label} {Line}</li>{/block:Lines}
+        </div>
+        {/block:Chat}
+
+    {block:Audio}
+        <div class="media">
+        {block:IndexPage}
+        {block:AudioEmbed}{AudioEmbed}{/block:AudioEmbed}
+        {block:ExternalAudio}{ExternalAudioURL}{/block:ExternalAudio}
+        {block:Caption}<h4>{Caption}</h4>{/block:Caption}
+        {/block:IndexPage}
+        {block:PermalinkPage}
+        {AudioEmbed-640}
+        {/block:PermalinkPage}
+        </div>
+    {/block:Audio}
+
+    {block:Video}
+        <div class="media">
+        {block:IndexPage}
+        {VideoEmbed-400}
+        {block:Caption}<h4>{Caption}</h4>{/block:Caption}
+        {/block:IndexPage}
+        {block:PermalinkPage}
+        {VideoEmbed-700}
+        {/block:PermalinkPage}
+    </div>
+    {/block:Video}
+
+    {block:Answer}
+        <div class="text">
+            <span style="text-transform:uppercase"><h3>@{Asker} asked:</h3></span>
+            <h3>{Question}</h3>
+            <div class="source">{Answer}</div>
+        </div>
+    {/block:Answer}
+
+
+{block:IndexPage}
+    <ul class="like_and_reblog_buttons">
+    <li>{ReblogButton color="white"}</li>
+    <li>{LikeButton color="white"}</li>
+    <li><a href="{Permalink}" target="_blank"><i class="fa-solid fa-paperclip"></i></a></li>
+    </ul>
+{/block:IndexPage}
+</div>
+</div>
+
+
+{block:PermalinkPage}
+    {block:Date}
+    <div class="p-b">
+    <section class="o">
+        {block:Caption}<section class="captions"><h4>{Caption}</h4></section>{/block:Caption}
+        {block:ContentSource}<p><a href="{SourceURL}">{SourceTitle}</a></p>{/block:ContentSource}</section>
+        <p style="text-align:center">{Month} {DayOfMonthWithZero}, {Year} &nbsp;&nbsp;|&nbsp;&nbsp; {12HourWithZero}:{Minutes} {AmPm}</p>
+        {block:HasTags}<section class="o">{block:Tags}<span><a href="{TagURL}">#{Tag}</a></span>{/block:Tags}</section>{/block:HasTags}
+        <p style="text-align:right">{NoteCountWithLabel}</p>
+        {block:PostNotes}<section>{PostNotes}</section>{/block:PostNotes}
+    </div>{/block:Date}
+    {/block:PermalinkPage}
+    
+{/block:Posts}
+
+<p id="footer">
+{block:PreviousPage}
+<a href="{PreviousPage}" class="pagination__previous">« PREVIOUS</a> 
+{/block:PreviousPage}
+{block:NextPage}
+<a href="{NextPage}" class="pagination__next">NEXT »</a> 
+{/block:NextPage} 
+    
+    <!-- {block:NoRebloggedFrom}
+{block:RebloggedFrom}{ReblogParentName}{/block:RebloggedFrom}
+{/block:NoRebloggedFrom} -->
+
+{block:ContentSource}<!-- {SourceURL}
+{block:SourceLogo}<img src="{BlackLogoURL}"width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />{/block:SourceLogo}
+{block:NoSourceLogo}{SourceLink}{/block:NoSourceLogo} -->
+{/block:ContentSource}
+
+</p>
+</div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js"></script>
+<script src="https://gbrrrl.com/assets/blog/disease/disease.js"></script>
+
+</body>
+</html>
