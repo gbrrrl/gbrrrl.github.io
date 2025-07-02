@@ -1,0 +1,153 @@
+html, body {
+  max-height: 100%;
+}
+
+body {
+    background-image: url("https://gbrrrl.com/assets/theme/hypno_bg.gif");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #000000;
+    background-attachment: fixed;
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+a {
+	color: #ffffff;
+}
+
+.header {
+    display: block;
+    max-width: 70%;
+    padding: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-color: #000000;
+    color: #000000;
+    border: 0px solid black;
+    margin: auto;
+}
+
+.header h1 {
+    font-size: 0px;
+    display: none!important;
+    visibility: hidden!important;
+}
+
+.header h2 {
+    font-family: Orienta, serif;
+    font-style: italic;
+    font-size: 22px;
+	color: #ffffff;
+}
+
+.navbar {
+    display: block;
+    max-width: 70%;
+	color: #000000;
+    background-color: #000000;
+    padding: 10px;
+    padding-bottom: 40px;
+    border: 1px solid black;
+    margin: auto;
+    top: 0;
+}
+
+.navbar a {
+    font-family: Oswald, monospace;
+    float: left;
+    display: inline-block;
+    color: #000000;
+    text-align: center;
+    padding: 4px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.navbar a.active {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+.main {   
+    font-family: 'Crimson Text', serif;
+    display: block;
+    max-width: 70%;
+	height: 100%;
+    background-color: #000000;
+    padding: 10px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    border: 0px solid black;
+    margin: auto;
+    text-align: center;
+    line-height: 2px;
+}
+
+.main h3 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.footer {
+    display: block;
+    max-width: 70%;
+	color: #000000;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #000000;
+    border: 0px solid black;
+    word-spacing: 10px;
+    margin: auto;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+
+.column {
+    flex: 48%;
+    max-width: 48%;
+    padding: 0 6px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
