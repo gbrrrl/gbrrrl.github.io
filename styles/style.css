@@ -37,6 +37,7 @@ a:hover {
 }
 
 .header h1 {
+	display: none !important;
 	font-size: 40px;
 	font-style: bold;
 }
