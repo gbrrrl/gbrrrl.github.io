@@ -52,7 +52,8 @@ a:hover {
 .header img {
 	margin: auto;
 	float: center;
-	width: 160px;
+	width: 200px;
+	padding: 20px;
 }
 
 h2 {
