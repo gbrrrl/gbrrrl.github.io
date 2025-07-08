@@ -42,6 +42,12 @@ a:hover {
 	font-style: bold;
 }
 
+.header h2 {
+	display: none !important;
+	font-size: 22px;
+	font-style: bold;
+}
+
 .header a {
 	text-align: right;
 	text-decoration: none;
@@ -54,22 +60,6 @@ a:hover {
 	float: right;
 	height: 100px;
 	padding: 10px;
-}
-
-h2 {
-	font-family: Inconsolata, Courier, monospace;
-	color: #999;
-	font-size: 22px;
-}
-
-h2 a {
-	color: #999;
-	font-size: 22px;
-}
-
-h2 a:hover {
-	color: #777;
-	font-size: 22px;
 }
 
 .navbar ul {
