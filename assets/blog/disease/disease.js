@@ -28,5 +28,11 @@
             history: false,
             outlayer: msnry,
         });
+		
+		// FIXED HEADER SOLUTION
+		window.onscroll = function() {
+  			document.getElementById('fixedDiv').style.top =
+     			(window.pageYOffset + window.innerHeight - 25) + 'px';
+		};
 
     }
