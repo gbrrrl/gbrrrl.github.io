@@ -31,7 +31,11 @@
 		
 		// FIXED HEADER SOLUTION
 		window.onscroll = function() {
-  			document.getElementById('fixedDiv').style.top =
+  			document.getElementById('navbar-main').style.top =
+     			(window.pageYOffset + window.innerHeight - 25) + 'px';
+		};
+		window.onscroll = function() {
+  			document.getElementById('navbar-title').style.top =
      			(window.pageYOffset + window.innerHeight - 25) + 'px';
 		};
 
