@@ -101,13 +101,6 @@ h2 a:hover {
 	color: #000;
 }
 
-.navbar img {
-	display: block;
-	text-align: center;
-	padding: 14px 20px;
-	height: 100px;
-}
-
 .navbar li a.active {
 	background-color: #666;
 	color: #fff;
