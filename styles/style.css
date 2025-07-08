@@ -29,6 +29,7 @@ a:hover {
 }
 
 .header {
+	margin: 0;
 	padding: 10px;
 	text-align: center;
 	background: #000;
@@ -98,6 +99,13 @@ h2 a:hover {
 .navbar li a:hover {
 	background-color: #ddd;
 	color: #000;
+}
+
+.navbar li img {
+	display: block;
+	text-align: center;
+	padding: 14px 20px;
+	height: 40px;
 }
 
 .navbar li a.active {
