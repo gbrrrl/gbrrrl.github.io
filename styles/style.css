@@ -52,7 +52,7 @@ a:hover {
 	margin: auto;
 	float: center;
 	width: 250px;
-	padding: 40px;
+	padding: 10px;
 }
 
 h2 {
@@ -71,7 +71,10 @@ h2 a:hover {
 	font-size: 22px;
 }
 
-.navbar {
+.navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 	overflow: hidden;
 	background-color: #000;
 	position: sticky;
@@ -80,8 +83,11 @@ h2 a:hover {
 	top: 0;
 }
 
-.navbar a {
+.navbar li {
 	float: left;
+}
+
+.navbar li a {
 	display: block;
 	color: #fff;
 	text-align: center;
@@ -89,12 +95,12 @@ h2 a:hover {
 	text-decoration: none;
 }
 
-.navbar a:hover {
+.navbar li a:hover {
 	background-color: #ddd;
 	color: #000;
 }
 
-.navbar a.active {
+.navbar li a.active {
 	background-color: #666;
 	color: #fff;
 }
