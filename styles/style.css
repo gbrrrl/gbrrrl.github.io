@@ -91,6 +91,11 @@ a:hover {
 	color: #000;
 }
 
+.navbar li img:hover {
+	background-color: none !important;
+	color: none !important;
+}
+
 .navbar li a.active {
 	background-color: #666;
 	color: #fff;
