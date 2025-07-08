@@ -33,7 +33,6 @@ a:hover {
 	text-align: center;
 	background: #000;
 	color: #fff;
-	margin-top: 50px;
 }
 
 .header h1 {
@@ -77,11 +76,12 @@ h2 a:hover {
 	background-color: #000;
 	position: sticky;
 	position: -webkit-sticky;
+	display: inline;
 	top: 0;
 }
 
 .navbar a {
-	float: center;
+	float: left;
 	display: block;
 	color: #fff;
 	text-align: center;
