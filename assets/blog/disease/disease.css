@@ -225,7 +225,7 @@ li {
   padding-top: 4px;
   border: 1px solid #ffffff;
   text-align: left;
-  position: relative;
+  position: static;
   left: 8px;
   top: 4px;
   display: inline-block;
