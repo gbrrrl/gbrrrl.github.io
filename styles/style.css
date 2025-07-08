@@ -49,6 +49,7 @@ a:hover {
 }
 
 .header a {
+	display: none !important;
 	text-align: right;
 	text-decoration: none;
 	color: #fff;
